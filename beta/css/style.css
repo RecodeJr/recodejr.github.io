@@ -162,16 +162,16 @@ color: #fff;
 
 }
 .link:hover {
-	text-decoration:none;
+	/*text-decoration:none;
 	color:#269c9c !important;
-	background:#fff;
+	background:#fff;*/
 }
 
 .link:active, .link:focus {
-	background: #269c9c;
+	/*background: #269c9c;
 	text-decoration:none;
 	color:#fff !important;
-  display:inline;
+  display:inline;*/
 }
 
 /* Navigation

@@ -47,17 +47,17 @@
         <ul class="we-create animated fadeInUp delay-1s">
         	<li>Empresa Júnior de Engenharia da Computação da UFRB</li>
         </ul>
-				<a class="link animated fadeInUp delay-1s" href="#about">Conheça-nos</a>
+				<a class="conhc link animated fadeInUp delay-1s" href="#about">Conheça-nos</a>
     </div>
 </div>
 </header><!--header-end-->
 
 
-<nav class="main-nav-outer"><!--main-nav-start-->
+<nav class="main-nav-outer" id="menufix"><!--main-nav-start-->
 	<div class="container">
-        <ul class="main-nav">
-        	<li class="small-logo"><a href="#header"><img src="img/recode_logo_escudo.png" alt=""  style="width:55px;height:55px;"></a></li>
-					<li><a href="#about">Sobre</a></li>
+        <ul class="main-nav"  >
+        	<li  class="small-logo"><a href="#header"><img src="img/recode_logo_escudo.png" alt=""  style="width:55px;height:55px;"></a></li>
+					<li><a  href="#about">Sobre</a></li>
             <li><a href="#service">Serviços</a></li>
             <li><a href="#team">Equipe</a></li>
 						<li><a href="#sejarecode">Seja Recode</a></li>
@@ -318,7 +318,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(e) {
-        $('#test').scrollToFixed();
+        $('#menufix').scrollToFixed();
         $('.res-nav_click').click(function(){
             $('.main-nav').slideToggle();
             return false
@@ -341,6 +341,25 @@
 
 
 <script type="text/javascript">
+$(window).load(function(){
+
+	$('.conhc').bind('click',function(event){
+		var $anchor = $(this);
+
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top - 102
+		}, 1500,'easeInOutExpo');
+		/*
+		if you don't want to use the easing effects:
+		$('html, body').stop().animate({
+			scrollTop: $($anchor.attr('href')).offset().top
+		}, 1000);
+		*/
+		event.preventDefault();
+	});
+})
+
+
 	$(window).load(function(){
 
 		$('.main-nav li a').bind('click',function(event){
