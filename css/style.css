@@ -55,12 +55,14 @@ a, a:hover, a:active{ outline:0px !important}
 /* Primary Styles
 ---------------------------------*/
 body {
-	background:#fff;
+	background:#000;
 	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	font-weight:normal;
 	color:#888888;
 	margin:0;
+	overflow-x: hidden;
+   	overflow-y: auto;
 }
 h2{
 	font-size:34px;
