@@ -106,7 +106,7 @@ p{
 
 .header{
 	text-align:center;
-	background:url(../img/background_header.png) left top repeat;
+	background:#0A0A0A;
 	padding:170px 0;
 }
 .logo{
@@ -606,16 +606,16 @@ border: 2px solid #fff;
 /* Talk Business
 ---------------------------------*/
 .business-talking{
-	background:url(../img/section-bg2.jpg) top center no-repeat;
+	background: url(../img/section-bg1.jpg) center center no-repeat;
 	background-size:cover;
-	padding:60px 0 10px;
+	padding:40px 0 10px;
 	text-align:center;
 }
 .business-talking h2{
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	padding:0;
-	margin:20px 0 70px;
+  margin: 30 30 30px;
 	text-transform:uppercase;
 	font-size:42px;
 	color:#fff;
@@ -758,7 +758,7 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/pw_maze_black_2X.png) left top repeat;
+	background:#090909;
 	padding:35px 0 35px;
 }
 .footer-logo{
