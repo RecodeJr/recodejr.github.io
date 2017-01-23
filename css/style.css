@@ -107,7 +107,8 @@ p{
 .header{
 	text-align:center;
 	background:#0A0A0A;
-	padding:170px 0;
+	/*padding:170px 0;*/
+  padding: 10% 0 300px 0;
 }
 .logo{
 	width:130px;
@@ -151,6 +152,9 @@ p{
 color: #fff;
 }
 
+.row {
+    margin-right: 0px;
+}
 
 .link{
 	padding:15px 35px;
