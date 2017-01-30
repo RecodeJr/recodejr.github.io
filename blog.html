@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+	<title>Recode Jr</title>
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="img/favicon.ico" type="img/x-icon">
+
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="css/responsive.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css">
+	<script src="/lib/angular.min.js"></script>
+
+	<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+	<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
+
+
+	<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+
+
+</head>
+
+<body>
+	<div style="overflow:hidden;" id="ini">
+
+
+		<section class="blog-tittle" id="header">
+			<!--blog tittle-start-->
+			<div class="container">
+				<img src="img/recode_logo_branca_escudo.png" height="120px" alt="" />
+
+				<h2>developer's blog</h2>
+			</div>
+		</section>
+
+
+		<section class="main-section" id="blog">
+			<!--main-section-start-->
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-sm-6 wow fadeInLeft delay-05s">
+						<div class="blog-post">
+							<div class="blog-post-col2">
+								<b class="post-tittle wow fadeInDown delay-03" href="#">post tittle</b>
+								<div id="text" class="jumbotron"></div><p>Aplicações para computadores, gerenciamento de estabelecimentos, controles de estoque, tudo da forma que você imaginar, na Recode Jr codificamos suas ideias. <a href="#"><i class="fa-ellipsis-h"></i></a></p>
+							</div>
+						</div>
+
+						<div class="blog-post">
+							<div class="blog-post-col2">
+								<b class="post-tittle wow fadeInDown delay-03" href="#">post tittle</b>
+								<p>Aplicações para computadores, gerenciamento de estabelecimentos, controles de estoque, tudo da forma que você imaginar, na Recode Jr codificamos suas ideias. <a href="#"><i class="fa-ellipsis-h"></i></a></p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-lg-3 col-sm-6  text-right wow fadeInUp delay-02s">
+						<ol class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Library</a></li>
+							<li class="active">Data</li>
+						</ol>
+						<ul class="social-link">
+							<!-- <li class="twitter"><a href="#"><i class="fa-twitter"></i></a></li> -->
+							<li class="facebook"><a target="_blank" href="https://facebook.com/recodejr"><i class="fa-facebook"></i></a></li>
+							<li class="github"><a target="_blank" href="https://github.com/recodejr"><i class="fa-github"></i></a></li>
+							<!-- <li class="gplus"><a href="#"><i class="fa-google-plus"></i></a></li> -->
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+		<!--main-section-end-->
+
+
+		<nav class="main-nav-outer" id="menufix">
+			<!--main-nav-start-->
+			<div class="container">
+				<ul class="main-nav">
+					<li class="small-logo">
+						<a href="#header"><img src="img/recode_logo_escudo.png" alt="" style="width:55px;height:55px;"></a>
+					</li>
+					<li><a href="index.html">Site</a></li>
+					<li><a href="index.html#contact">Contato</a></li>
+				</ul>
+				<a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
+			</div>
+	</div>
+	</nav>
+	<!--main-nav-end-->
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<span class="copyright">Copyright © 2016 | Recode Jr</span>
+		</div>
+		<!--
+        All links in the footer should remain intact.
+        Licenseing information is available at: http://bootstraptaste.com/license/
+        You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Knight
+    -->
+	</footer>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+			$('#menufix').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+		});
+	</script>
+
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+	</script>
+
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$('.conhc').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 102
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				event.preventDefault();
+			});
+		})
+
+
+		$(window).load(function() {
+
+			$('.main-nav li a').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 102
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+
+			var $container = $('.portfolioContainer'),
+				$body = $('body'),
+				colW = 375,
+				columns = null;
+
+
+			$container.isotope({
+				// disable window resizing
+				resizable: true,
+				masonry: {
+					columnWidth: colW
+				}
+			});
+
+			$(window).smartresize(function() {
+				// check if columns has changed
+				var currentColumns = Math.floor(($body.width() - 30) / colW);
+				if (currentColumns !== columns) {
+					// set new column count
+					columns = currentColumns;
+					// apply width to container manually, then trigger relayout
+					$container.width(columns * colW)
+						.isotope('reLayout');
+				}
+
+			}).smartresize(); // trigger resize to set container width
+			$('.portfolioFilter a').click(function() {
+				$('.portfolioFilter .current').removeClass('current');
+				$(this).addClass('current');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+
+					filter: selector,
+				});
+				return false;
+			});
+
+		});
+	</script>
+</body>
+
+</html>
