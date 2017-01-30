@@ -260,6 +260,28 @@ color: #fff;
 	background:#fafafa;
 }
 
+
+.blog-post{
+	padding:0 0 0 0;
+	font-size:14px;
+	margin-bottom:40px;
+}
+.blog-post-col1{
+	float:left;
+	width:60px;
+}
+.blog-post-col1 i{
+	font-style:normal;
+	font-size:38px;
+	display:block;
+	color:#222;
+	font-family: 'FontAwesome';
+	line-height:38px;
+}
+.blog-post-col2{
+	overflow:hidden;
+}
+
 /* Featured Work
 ---------------------------------*/
 .featured-work{
@@ -479,6 +501,24 @@ color: #fff;
 border: 2px solid #fff;
 }
 
+.post-tittle{
+	font-style:normal;
+	margin:0 auto;
+	display:block;
+	line-height:68px;
+	text-align:center;
+	font-size:27px;
+	color:#269c9c;
+	cursor: pointer;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+
+.post-tittle:hover{
+color: #3AC2C2;
+}
+
 .c-logo-part{
 	background:#269c9c;
 	padding:25px 0;
@@ -626,6 +666,24 @@ border: 2px solid #fff;
 	color:#fff;
 }
 
+/* Blog tittle
+---------------------------------*/
+.blog-tittle{
+  background-color: rgb(24, 24, 24);
+	/*background: url(http://more-sky.com/data/out/10/IMG_372411.png) center center no-repeat;*/
+	background-size:cover;
+	padding:40px 0 10px;
+	text-align:center;
+}
+.blog-tittle h2{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	padding:40px 0 10px;
+  margin: 30 30 30px;
+	text-transform:lowercase;
+	font-size:42px;
+	color:#fff;
+}
 
 /* Contact
 ---------------------------------*/
