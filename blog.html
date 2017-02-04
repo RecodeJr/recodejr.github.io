@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="blog">
 
 <head>
 	<meta charset="utf-8">
@@ -17,7 +17,7 @@
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 	<link href="css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="css/animate.css" rel="stylesheet" type="text/css">
-	<script src="/lib/angular.min.js"></script>
+	<script src="js/angular.min.js"></script>
 
 	<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
 
@@ -28,6 +28,15 @@
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
+
+	<script>
+		angular.module("blog", []);
+		angular.module("blog").controller("blogController", function($scope){
+					$scope.blogTittle = "post tittle";
+					
+		});
+	</script>
+
 
 
 	<!--[if lt IE 9]>
@@ -53,15 +62,15 @@
 		</section>
 
 
-		<section class="main-section" id="blog">
+		<section class="main-section" ng-controller="blogController">
 			<!--main-section-start-->
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-9 col-sm-6 wow fadeInLeft delay-05s">
+					<div class="col-lg-9 col-sm-6 wow fadeInLeft delay-05s" >
 						<div class="blog-post">
 							<div class="blog-post-col2">
-								<b class="post-tittle wow fadeInDown delay-03" href="#">post tittle</b>
-								<div id="text" class="jumbotron"></div><p>Aplicações para computadores, gerenciamento de estabelecimentos, controles de estoque, tudo da forma que você imaginar, na Recode Jr codificamos suas ideias. <a href="#"><i class="fa-ellipsis-h"></i></a></p>
+								<a class="post-tittle wow fadeInDown delay-03" href="#">{{blogTittle}}</a>
+								<p>Aplicações para computadores, gerenciamento de estabelecimentos, controles de estoque, tudo da forma que você imaginar, na Recode Jr codificamos suas ideias. <a href="#"><i class="fa-ellipsis-h"></i></a></p>
 							</div>
 						</div>
 
