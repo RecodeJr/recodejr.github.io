@@ -13,7 +13,7 @@ Padrão de desenvolvimento:
 ![img](padrdv.png)
 
 
-*Qualquer dúvida leia:*
+Qualquer dúvida leia:
 
 [Utilizando Gitflow](https://joshuapassos.github.io/#/artigo/1)
 
