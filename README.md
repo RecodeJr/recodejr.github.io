@@ -1,4 +1,6 @@
 # Site Recode Jr.
+------------------------------------
+
 
 Usaremos o gitflow para o desenvolvimento.
 
