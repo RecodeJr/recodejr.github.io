@@ -2,7 +2,7 @@
 ------------------------------------
 
 
-Usaremos o gitflow para o desenvolvimento.
+Usaremos o Gitflow para o desenvolvimento.
 
 Colocaremos as metas para o site no repositório para realizar o lançamento de cada versão de maneira organizada.
 
