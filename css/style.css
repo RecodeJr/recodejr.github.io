@@ -638,8 +638,8 @@ color: #3AC2C2;
 .team-leader ul li a.fa-facebook:hover{
 	color:#3b5998;
 }
-.team-leader ul li a.fa-pinterest:hover{
-	color:#cb2026;
+.team-leader ul li a.fa-youtube:hover{
+	color:#D70000;
 }
 .team-leader ul li a.fa-google-plus:hover{
 	color:#dd4b39;
@@ -752,8 +752,8 @@ color: #3AC2C2;
 .facebook a:hover {
 	background: #3b5998;
 }
-.pinterest a:hover {
-	background: #cb2026;
+.youtube a:hover {
+	background: #D70000;
 }
 .gplus a:hover {
 	background: #dd4b39;
