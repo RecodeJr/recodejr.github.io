@@ -61,6 +61,8 @@
 	.main-nav li a{ display:block; padding:7px 32px; border-bottom:none;}
 	.main-nav li a:hover{color:#7cc576}
 	.team-leader-box{ max-width:307px; width:auto; float:none; margin:0 auto;	}
+  .parceirosx{ max-width:307px; float:none; margin:0 auto;	}
+
 	.team-leader-box:nth-of-type(3n){ margin:0 auto}
 	.res-nav_click{ display:block;}
 	.featured-work{ font-size:12px; margin-top:30px;}
