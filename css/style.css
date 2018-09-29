@@ -105,11 +105,10 @@ p{
 ---------------------------------*/
 
 .header{
+  background:url(../img/capa.jpg) center center no-repeat;
+  background-size:cover;
 	text-align:center;
-	background:#0A0A0A;
-	/*padding:170px 0;*/
-  padding: 10% 0 10% 0;
-
+  padding: 10% 0 15% 0;
 }
 .logo{
 	width:130px;
@@ -187,6 +186,7 @@ color: #fff;
   display:inline;*/
 }
 
+
 /* Navigation
 ---------------------------------*/
 .main-nav-outer{
@@ -229,7 +229,7 @@ color: #fff;
 }
 
 .main-section{
-	padding:90px 0 0;
+	padding:90px 0 110px;
 }
 
 
@@ -443,6 +443,7 @@ img {
 	background-size:cover;
 	padding:55px 0;
 	text-align:center;
+  z-index: 199;
 }
 .client-part-haead{
 	color:#fdfdfd;
@@ -873,7 +874,9 @@ color: #3AC2C2;
 .portfolioContainer{
 	max-width: 1140px;
 }
-
+.paddind_footer{
+  padding-bottom: 0 !important;
+}
 
 /* Animation Timers
 ---------------------------------*/
