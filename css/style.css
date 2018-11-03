@@ -105,7 +105,7 @@ p{
 ---------------------------------*/
 
 .header{
-  background:url(../img/capa.jpg) center center no-repeat;
+  background:url(../img/capa.svg) center center no-repeat;
   background-size:cover;
 	text-align:center;
   padding: 10% 0 15% 0;
