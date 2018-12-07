@@ -105,10 +105,10 @@ p{
 ---------------------------------*/
 
 .header{
-  background:url(../img/capa.svg) center center no-repeat;
-  background-size:cover;
-	text-align:center;
-  padding: 10% 0 15% 0;
+	background:url(../img/capa.svg) center center no-repeat;
+	background-size:cover;
+	  text-align:center;
+	padding: 10% 0 15% 0;
 }
 .logo{
 	width:130px;
@@ -174,9 +174,9 @@ color: #fff;
 
 }
 .link:hover {
-	/*text-decoration:none;
-	color:#269c9c !important;
-	background:#fff;*/
+	text-decoration:none;
+	color:#fff !important;
+	background:#127b7b;
 }
 
 .link:active, .link:focus {
