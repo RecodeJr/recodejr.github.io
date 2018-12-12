@@ -544,6 +544,7 @@ color: #3AC2C2;
 }
 #parceiros {
 	padding:85px 0 0;
+	background: #fff;
 }
 .main-section.team h6{
 	margin-bottom:40px;
@@ -766,7 +767,7 @@ color: #3AC2C2;
 	background: #dd4b39;
 }
 .github a:hover {
-	background: #57297d;
+	background: #5e2091;
 }
 .dribbble a:hover {
 	background: #ea4c89;
