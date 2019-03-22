@@ -126,14 +126,14 @@
 							</ul>
 						</div>
 						<h3 class="wow fadeInDown delay-06s">Rafael Melo</h3>
-						<span class="wow fadeInDown delay-06s">Diretor de projetos</span>
+						<span class="wow fadeInDown delay-06s">Diretor de Projetos</span>
 					</div>
 				</div>
 				<div class="col-xs-3 col-md-2">
 					<div class="team-leader-box">
 						<div class="team-leader wow fadeInDown delay-09s">
 							<div class="team-leader-shadow"></div>
-							<img src="img/membros/semfoto.jpg" alt="">
+							<img src="img/membros/josias.jpg" alt="">
 							<ul>
 								<li>
 									<a target="_blank" href="https://josiassas.github.io" class="fa-link"></a>
@@ -141,7 +141,7 @@
 							</ul>
 						</div>
 						<h3 class="wow fadeInDown delay-09s">Josias Souza</h3>
-						<span class="wow fadeInDown delay-09s">Diretor administrativo</span>
+						<span class="wow fadeInDown delay-09s">Diretor Admin/Financeiro</span>
 					</div>
 				</div>
 				<div class="col-xs-3 col-md-2">
@@ -156,14 +156,14 @@
                             </div>
                         </ul>
 						<h3 class="wow fadeInDown delay-09s">Mateus Soares</h3>
-						<span class="wow fadeInDown delay-09s">Diretor de marketing</span>
+						<span class="wow fadeInDown delay-09s">Diretor de Marketing/RH</span>
 					</div>
 				</div>
 				<div class="col-xs-0 col-md-2"></div>
             </div>
 
             <div class="row" style="padding-top: 100px;">
-                <h2>MEMBROS</h2>
+                <h2>Equipe</h2>
                 <div class="col-xs-0 col-md-2"></div>
                 <div class="col-xs-3 col-md-2">
                     <div class="team-leader-box">
@@ -335,71 +335,6 @@
                     </div>
                 <div class="col-xs-0 col-md-2"></div>
             </div>
-            <div class="row" style="padding-top: 100px;">
-                <h2>Os barris(nao sei o que colocar</h2>
-                <div class="col-xs-0 col-md-2"></div>
-				<div class="col-xs-3 col-md-2">
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInDown delay-03s">
-							<div class="team-leader-shadow"></div>
-							<img src="img/membros/semfoto.jpg" alt="">
-							<ul>
-								<li>
-									<a target="_blank" href="https://github.com/taironedias" class="fa-github"></a>
-								</li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInDown delay-03s">Tairone Dias</h3>
-						<span class="wow fadeInDown delay-03s">Ex-Presidente</span>
-					</div>
-				</div>
-				<div class="col-xs-3 col-md-2">
-					<div class="team-leader-box">
-						<div class="team-leader  wow fadeInDown delay-06s">
-							<div class="team-leader-shadow"></div>
-							<img src="img/membros/semfoto.jpg" alt="">
-							<ul>
-								<li>
-									<a target="_blank" href="https://github.com/joshuapassos" class="fa-github"></a>
-								</li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInDown delay-06s">Joshua Passos</h3>
-						<span class="wow fadeInDown delay-06s">Ex-Diretor</span>
-					</div>
-				</div>
-				<div class="col-xs-3 col-md-2">
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInDown delay-09s">
-							<div class="team-leader-shadow"></div>
-							<img src="img/membros/semfoto.jpg" alt="">
-							<ul>
-								<li>
-									<a target="_blank" href="https://github.com/josiassas" class="fa-github"></a>
-								</li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInDown delay-09s">Josias Souza</h3>
-						<span class="wow fadeInDown delay-09s">Diretor administrativo</span>
-					</div>
-				</div>
-				<div class="col-xs-3 col-md-2">
-					<div class="team-leader-box">
-						<div class="team-leader wow fadeInDown delay-09s">
-							<div class="team-leader-shadow"></div>
-							<img src="img/membros/semfoto.jpg" alt="">
-							<ul>
-								<li>
-									<a target="_blank" href="https://github.com/soares1618" class="fa-github"></a>
-								</li>
-							</ul>
-						</div>
-						<h3 class="wow fadeInDown delay-09s">Mateus Soares</h3>
-						<span class="wow fadeInDown delay-09s">Diretor de marketing</span>
-					</div>
-				</div>
-				<div class="col-xs-0 col-md-2"></div>
-            </div>
         </section>
         <!--Conteudo-->
 
@@ -416,7 +351,7 @@
                 <div class="footer-logo">
                     <a href="index.html"><img src="img/recode_logo_branca_escudo.png" alt=""></a>
                 </div>
-                <span class="copyright">Copyright © 2016-2018 | Recode Jr.</span>
+                <span class="copyright">Copyright © 2016-2019</span>
             </div>
             <!--
                     All links in the footer should remain intact.
@@ -489,51 +424,6 @@
             })
         </script>
 
-        <script type="text/javascript">
-
-        $(window).load(function(){
-
-
-        var $container = $('.portfolioContainer'),
-            $body = $('body'),
-            colW = 375,
-            columns = null;
-
-
-        $container.isotope({
-            // disable window resizing
-            resizable: true,
-            masonry: {
-            columnWidth: colW
-            }
-        });
-
-        $(window).smartresize(function(){
-            // check if columns has changed
-            var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
-            if ( currentColumns !== columns ) {
-            // set new column count
-            columns = currentColumns;
-            // apply width to container manually, then trigger relayout
-            $container.width( columns * colW )
-                .isotope('reLayout');
-            }
-
-        }).smartresize(); // trigger resize to set container width
-        $('.portfolioFilter a').click(function(){
-                $('.portfolioFilter .current').removeClass('current');
-                $(this).addClass('current');
-
-                var selector = $(this).attr('data-filter');
-                $container.isotope({
-
-                    filter: selector,
-                });
-                return false;
-            });
-
-        });
-
-        </script>
+        
     </body>
 </html>
