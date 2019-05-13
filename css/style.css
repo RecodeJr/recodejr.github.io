@@ -109,6 +109,8 @@ p{
 	background-size:cover;
 	  text-align:center;
 	padding: 10% 0 15% 0;
+	background-color: #212121;
+	min-height: 100vh;
 }
 .logo{
 	width:130px;
@@ -443,7 +445,8 @@ img {
 	background-size:cover;
 	padding:55px 0;
 	text-align:center;
-  z-index: 199;
+	z-index: 199;
+	min-height: 100vh;
 }
 .client-part-haead{
 	color:#fdfdfd;
