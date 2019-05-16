@@ -268,38 +268,36 @@
 				<div class="row">
 					<h2>NOSSOS PARCEIROS</h2>
 					<!-- <h6>Um texto qualquer</h6> -->
-					<div class="large-12 columns">
-						<div class="owl-carousel owl-theme">
-							<div class="item">
-								<a href="https://www.ibpc.com.br/" target="_blank" >
-									<img src="img/parceiros/ibpc.jpg" alt="IBPC - Pré-Moldados de Concreto">
-								</a>
-							</div>
-							<div class="item">
-								<a href="https://www.ufrb.edu.br/ppgci/" target="_blank" >
-									<img src="img/parceiros/prppgci.jpg" alt="PRPPGCI - UFRB">
-								</a>
-							</div>
-							<div class="item">
-								<a href="https://www.ufrb.edu.br/cetec/" target="_blank" >
-									<img src="img/parceiros/cetec.jpg" alt="CETEC - UFRB">
-								</a>
-							</div>
-							<div class="item">
-								<a href="https://www.construrecjr.com/" target="_blank" >
-									<img src="img/parceiros/construrec_jr.jpg" alt="ConstruREC Jr.">
-								</a>
-							</div>
-							<div class="item">
-								<a href="#" target="_blank" >
-									<img src="img/parceiros/IEEE.jpg" alt="Ramo Estudantil IEEE UFRB">
-								</a>
-							</div>
-							<div class="item">
-								<a href="#" target="_blank" >
-									<img src="img/parceiros/baja.jpg" alt="Reconbaja UFRB">
-								</a>
-							</div>
+					<div class="owl-carousel">
+						<div class="item">
+							<a href="https://www.ibpc.com.br/" target="_blank" >
+								<img src="img/parceiros/ibpc.jpg" alt="IBPC - Pré-Moldados de Concreto">
+							</a>
+						</div>
+						<div class="item">
+							<a href="https://www.ufrb.edu.br/ppgci/" target="_blank" >
+								<img src="img/parceiros/prppgci.jpg" alt="PRPPGCI - UFRB">
+							</a>
+						</div>
+						<div class="item">
+							<a href="https://www.ufrb.edu.br/cetec/" target="_blank" >
+								<img src="img/parceiros/cetec.jpg" alt="CETEC - UFRB">
+							</a>
+						</div>
+						<div class="item">
+							<a href="https://www.construrecjr.com/" target="_blank" >
+								<img src="img/parceiros/construrec_jr.jpg" alt="ConstruREC Jr.">
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" target="_blank" >
+								<img src="img/parceiros/IEEE.jpg" alt="Ramo Estudantil IEEE UFRB">
+							</a>
+						</div>
+						<div class="item">
+							<a href="#" target="_blank" >
+								<img src="img/parceiros/baja.jpg" alt="Reconbaja UFRB">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -422,12 +420,23 @@
 		$(document).ready(function() {
 			var owl = $('.owl-carousel');
 			owl.owlCarousel({
-				items: 6,
 				loop: true,
-				margin: 15,
+				margin: 10,
 				autoplay: true,
 				autoplayTimeout: 10000,
-				autoplayHoverPause: true
+				autoplayHoverPause: true,
+				responsiveClass: true,
+				responsive:{
+					0:{
+						items:3,
+					},
+					600:{
+						items:4,
+					},
+					1000:{
+						items:6,
+					}
+				}
 			});
 			$('.play').on('click', function() {
 				owl.trigger('play.owl.autoplay', [1000])
@@ -436,7 +445,7 @@
 				owl.trigger('stop.owl.autoplay')
 			})
 		})
-  </script>
+  	</script>
 	<script type="text/javascript" src="js/carousel/owl.carousel.js"></script>
 	<!-- Fim Script carousel parceiros-->
 
