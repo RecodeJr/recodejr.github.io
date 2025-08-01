@@ -540,7 +540,7 @@ img {
 
 .show {
 	display: block;
-  }
+}
   
 
 /* no transition on .isotope container */
@@ -906,6 +906,9 @@ color: #3AC2C2;
 .linkedin a:hover {
 	background: #0e76a8;
 }
+.whatsapp a:hover {
+	background-color: #25D366;
+}
 
 .form{
 	margin:0 66px 0 30px;
@@ -1078,3 +1081,31 @@ color: #3AC2C2;
 	text-align:center;
 	text-transform:uppercase;
 }
+
+/* Produtos
+
+.produtosContainer{
+	margin:0 auto;
+	padding-left:15px;
+}
+.produtos-box{
+	margin: 10px 0 0 0;
+	text-align:center;
+	margin-bottom:30px;
+	height:600px;
+	width:350px;
+	overflow:hidden;
+	float:left;
+	padding-bottom:40px;
+}
+.produtos-box img{
+	margin-bottom:25px;
+	border-radius: 2%;
+	width: 50%;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+}
+.produtos-box img:hover{
+	opacity: 0.6;
+} ---------------------------------*/
