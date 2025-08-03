@@ -314,8 +314,6 @@ color: #fff;
 	line-height:20px;
 	margin:17px 32px;
 	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
 }
 
 .main-nav li a:hover{
@@ -540,6 +538,10 @@ img {
 
 .show {
 	display: block;
+}
+
+.portfolioContainer{
+	max-width: 1140px;
 }
   
 
@@ -1017,10 +1019,6 @@ color: #3AC2C2;
 .res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
 	color: #269c9c !important;
 }
-
-.portfolioContainer{
-	max-width: 1140px;
-}
 .paddind_footer{
   padding-bottom: 0 !important;
 }
@@ -1083,17 +1081,22 @@ color: #3AC2C2;
 }
 
 /* Produtos
-
+---------------------------------*/
 .produtosContainer{
 	margin:0 auto;
-	padding-left:15px;
+	padding-left: 40px;
+}
+.produtosContainer::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .produtos-box{
-	margin: 10px 0 0 0;
+	margin: 0 10px 0 0;
 	text-align:center;
-	margin-bottom:30px;
-	height:600px;
-	width:350px;
+	height:400px;
+	width: 100%;
+  	max-width: 350px;
 	overflow:hidden;
 	float:left;
 	padding-bottom:40px;
@@ -1103,9 +1106,7 @@ color: #3AC2C2;
 	border-radius: 2%;
 	width: 50%;
 	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
 }
 .produtos-box img:hover{
 	opacity: 0.6;
-} ---------------------------------*/
+}
