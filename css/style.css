@@ -251,11 +251,6 @@ p{
 .start-button li a{
 color: #fff;
 }
-
-.row {
-    margin-right: 0px;
-}
-
 .link{
 	padding:15px 35px;
 	background:#269c9c;
@@ -315,20 +310,16 @@ color: #fff;
 	margin:17px 32px;
 	transition:all 0.3s ease-in-out;
 }
-
 .main-nav li a:hover{
 	text-decoration:none;
 	color: #269c9c;
 }
-
 .small-logo{
 	padding:0 32px;
 }
-
 .main-section{
 	padding:90px 0 110px;
 }
-
 
 /* Services
 ---------------------------------*/
@@ -797,7 +788,7 @@ color: #3AC2C2;
 	font-family: 'Montserrat', sans-serif;
 	font-weight:700;
 	padding:0;
-  margin: 30 30 30px;
+ 	margin: 30 30 30px;
 	text-transform:uppercase;
 	font-size:42px;
 	color:#fff;
@@ -827,7 +818,6 @@ color: #3AC2C2;
 .main-section.contact{
 	padding:90px 0 100px;
 }
-
 .contact-info-box{
 	font-size:15px;
 	margin:0 0 14px 68px;
@@ -856,7 +846,6 @@ color: #3AC2C2;
 }
 .social-link{
 	padding:35px 0;
-	margin:0 0 0 68px;
 	display:block;
 	overflow:hidden;
 	list-style:none;
@@ -911,7 +900,6 @@ color: #3AC2C2;
 .whatsapp a:hover {
 	background-color: #25D366;
 }
-
 .form{
 	margin:0 66px 0 30px;
 }
@@ -969,9 +957,9 @@ color: #3AC2C2;
 
 .footer{
 	background:#000000;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0 30px 0;
 	color: #cccccc;
+	justify-content: space-between;
 }
 .footer h3{
 	color: #cccccc;
@@ -979,7 +967,6 @@ color: #3AC2C2;
 .footer-logo{
 	width: 200px;
 	height: 97px;
-	margin-left: -18px;
 }
 .copyright{
 	color:#cccccc;
@@ -995,11 +982,9 @@ color: #3AC2C2;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
 }
-
 .copyright a:hover {
 	color: #fff;
 }
-
 .res-nav_click {
 	line-height:38px;
 	font-family: 'FontAwesome';
@@ -1012,15 +997,30 @@ color: #3AC2C2;
 	height:27px;
 	margin:20px auto;
 	transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.3s ease-in-out;
 }
-
 .res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
 	color: #269c9c !important;
 }
 .paddind_footer{
   padding-bottom: 0 !important;
+}
+.footer ul{
+	display: flex;
+	flex-wrap: wrap;
+  	justify-content: center;
+	align-items: center;
+}
+.fadeInDown{
+	text-align: center;
+	justify-content: center;
+}
+.fadeInDown span{
+	margin-bottom: 10px;
+}
+@media (max-width: 767px){
+	.fadeInRight{
+		text-align: center;
+	}
 }
 
 /* Animation Timers
