@@ -31,22 +31,28 @@
 
     <!--main-nav-start-->
     <nav class="main-nav-outer" id="menufix">
-        <div class="container">
-            <ul class="main-nav">
-                <li class="small-logo">
-                    <a href="index.html#header"><img src="img/recode_logo_escudo.png" alt=""
-                            style="width:55px;height:55px;"></a>
-                </li>
+        <button class="hamburger-btn" id="hamburger" aria-label="Menu">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html#header" class="logo-link">
+                    <img src="img/recode_logo_escudo.png" alt="Logo" class="sidebar-logo">
+                </a>
+            </div>
+
+            <ul class="sidebar-menu">
                 <li><a href="index.html#about">Sobre</a></li>
-                <li><a href="index.html#service">Serviços</a></li>
+                <li><a href="index.html#services">Serviços</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="index.html#equipe">Equipe</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
         </div>
     </nav>
+    <div class="menu-overlay"></div>
     <!--main-nav-end-->
 
     <!--main-section-start-->
@@ -212,36 +218,66 @@
 
 <!-- Bootstrap script -->
 
-<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="js/jquery-3.5.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Extra scripts -->
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script> <!-- Menu Portfolio -->
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script> <!-- Navbar scrolling -->
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> <!-- Smooth animation -->
-<script type="text/javascript" src="js/wow.js"></script> <!-- Page smooth animation -->
-<script type="text/javascript" src="js/classie.js"></script> <!-- Page host library -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/jquery.isotope.js"></script> <!-- Menu Portfolio -->
+<script src="js/jquery-scrolltofixed.js"></script> <!-- Navbar scrolling -->
+<script src="js/jquery.easing.1.3.js"></script> <!-- Smooth animation -->
+<script src="js/wow.js"></script> <!-- Page smooth animation -->
+<script src="js/classie.js"></script> <!-- Page host library -->
 
-<!-- Navbar scrolling script-->
-<script type="text/javascript">
-    $(document).ready(function (e) {
-        $('#menufix').scrollToFixed();
-        $('.res-nav_click').click(function () {
-            $('.main-nav').slideToggle();
-            return false
-        });
-    });
-</script>
-
-<!-- Page smooth animation script -->
+<!-- Scripts do Menu e Portfolio -->
 <script>
-    wow = new WOW({
+$(document).ready(function() {
+    // Menu hamburger
+    $('#hamburger').click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.sidebar').toggleClass('active');
+        $('.menu-overlay').toggleClass('active');
+    });
+
+    // Fecha menu ao clicar fora
+    $(document).click(function(e) {
+        if (!$(e.target).closest('.sidebar, #hamburger').length) {
+            $('.sidebar').removeClass('active');
+            $('.menu-overlay').removeClass('active');
+        }
+    });
+
+    // Portfolio isotope
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        resizable: true,
+        masonry: {
+            columnWidth: 375
+        }
+    });
+
+    // Portfolio filter
+    $('.portfolioFilter a').click(function() {
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector
+        });
+        return false;
+    });
+
+    // Menu fixo no scroll
+    $('#menufix').scrollToFixed();
+
+    // Wow animation
+    new WOW({
         animateClass: 'animated',
         offset: 100
-    });
-    wow.init();
+    }).init();
+});
 </script>
 
 <!-- Smooth page scrolling -->
@@ -266,54 +302,6 @@
             event.preventDefault();
         });
     });
-</script>
-
-<!-- Portfolio Filter -->
-<script type="text/javascript">
-
-    $(window).load(function () {
-
-
-        var $container = $('.portfolioContainer'),
-            $body = $('body'),
-            colW = 375,
-            columns = null;
-
-
-        $container.isotope({
-            // disable window resizing
-            resizable: true,
-            masonry: {
-                columnWidth: colW
-            }
-        });
-
-        $(window).smartresize(function () {
-            // check if columns has changed
-            var currentColumns = Math.floor(($body.width() - 30) / colW);
-            if (currentColumns !== columns) {
-                // set new column count
-                columns = currentColumns;
-                // apply width to container manually, then trigger relayout
-                $container.width(columns * colW)
-                    .isotope('reLayout');
-            }
-
-        }).smartresize(); // trigger resize to set container width
-        $('.portfolioFilter a').click(function () {
-            $('.portfolioFilter .current').removeClass('current');
-            $(this).addClass('current');
-
-            var selector = $(this).attr('data-filter');
-            $container.isotope({
-
-                filter: selector,
-            });
-            return false;
-        });
-
-    });
-
 </script>
 
 </html>

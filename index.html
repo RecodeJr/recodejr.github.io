@@ -60,24 +60,30 @@
     </div>
     <!-- header-end -->
 
+    <!-- Substitua a navegação atual por este código em todos os arquivos -->
     <nav class="main-nav-outer" id="menufix">
-        <!-- main-nav-start -->
-        <div class="container">
-            <ul class="main-nav">
-                <li class="small-logo">
-                    <a href="#header"><img src="img/recode_logo_escudo.png" alt="" style="width:55px;height:55px;"></a>
-                </li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
+        <button class="hamburger-btn" id="hamburger" aria-label="Menu">
+            <i class="fa fa-bars"></i>
+        </button>
+        
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html#header" class="logo-link">
+                    <img src="img/recode_logo_escudo.png" alt="Logo" class="sidebar-logo">
+                </a>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li><a href="index.html#about">Sobre</a></li>
+                <li><a href="index.html#services">Serviços</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="index.html#equipe">Equipe</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
         </div>
     </nav>
-    <!-- main-nav-end -->
+    <div class="menu-overlay"></div>
 
     <section class="main-section client-part" id="about">
         <!-- main-section client-part-start -->
@@ -484,6 +490,62 @@
             -->
     </footer>
 
+    <div class="menu-overlay"></div>
+
+    <!-- Scripts essenciais - Adicione antes do </body> -->
+    <!-- jQuery (apenas uma versão) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Bootstrap e Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scripts auxiliares -->
+    <script src="js/jquery-scrolltofixed.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/classie.js"></script>
+
+    <!-- Script do menu -->
+    <script>
+$(document).ready(function() {
+    // Inicializa WOW
+    new WOW({
+        animateClass: 'animated',
+        offset: 100
+    }).init();
+
+    // Menu hamburguer
+    $('#hamburger').on('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $('.sidebar').toggleClass('active');
+        $('.menu-overlay').toggleClass('active');
+    });
+
+    // Fecha menu ao clicar fora
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.sidebar, #hamburger').length) {
+            $('.sidebar').removeClass('active');
+            $('.menu-overlay').removeClass('active');
+        }
+    });
+
+    // Previne fechar ao clicar dentro do menu
+    $('.sidebar').on('click', function(e) {
+        e.stopPropagation();
+    });
+
+    // Fecha ao clicar em links
+    $('.sidebar-menu a').on('click', function() {
+        $('.sidebar').removeClass('active');
+        $('.menu-overlay').removeClass('active');
+    });
+
+    // Menu fixo no scroll
+    $('#menufix').scrollToFixed();
+});
+</script>
 </body>
 
 <!-- Js -->
@@ -580,6 +642,94 @@
             owl.trigger('stop.owl.autoplay')
         })
     })
+</script>
+<script>
+    $(document).ready(function() {
+        // Toggle menu
+        $('#hamburger').click(function(e) {
+            e.stopPropagation();
+            $('.sidebar').toggleClass('active');
+            $('body').toggleClass('menu-open');
+            $('.menu-overlay').toggleClass('active');
+        });
+
+        // Fechar menu ao clicar fora
+        $(document).click(function(e) {
+            if (!$(e.target).closest('.sidebar, #hamburger').length) {
+                $('.sidebar').removeClass('active');
+                $('body').removeClass('menu-open');
+                $('.menu-overlay').removeClass('active');
+            }
+        });
+
+        // Fechar menu ao clicar em um link
+        $('.sidebar-menu a').click(function() {
+            $('.sidebar').removeClass('active');
+            $('body').removeClass('menu-open');
+            $('.menu-overlay').removeClass('active');
+        });
+
+        // Evitar que cliques dentro do menu fechem ele
+        $('.sidebar').click(function(e) {
+            e.stopPropagation();
+        });
+    });
+</script>
+
+<!-- Scripts de Animação -->
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script>
+    // Inicializa animações WOW
+    wow = new WOW({
+        animateClass: 'animated',
+        offset: 100
+    });
+    wow.init();
+
+    // Animações do menu
+    $(document).ready(function() {
+        // Toggle menu com animação
+        $('#hamburger').click(function(e) {
+            e.stopPropagation();
+            $('.sidebar').toggleClass('active');
+            $('body').toggleClass('menu-open');
+            $('.menu-overlay').toggleClass('active animated fadeIn');
+        });
+
+        // Fechar menu com animação
+        $(document).click(function(e) {
+            if (!$(e.target).closest('.sidebar, #hamburger').length) {
+                $('.sidebar').removeClass('active');
+                $('body').removeClass('menu-open');
+                $('.menu-overlay').removeClass('active');
+            }
+        });
+
+        // Animação nos links do menu
+        $('.sidebar-menu a').click(function() {
+            $('.sidebar').removeClass('active');
+            $('body').removeClass('menu-open');
+            $('.menu-overlay').removeClass('active');
+        });
+
+        // Scroll suave para links âncora
+        $('a[href*="#"]').not('[href="#"]').click(function(event) {
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && 
+                location.hostname == this.hostname
+            ) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top - 80
+                    }, 1000, 'easeInOutExpo');
+                }
+            }
+        });
+    });
 </script>
 
 </html>
