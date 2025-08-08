@@ -62,6 +62,13 @@ a, a:hover, a:active{
 	font-style: normal;
 }
 
+/* Prevents horizontal overflowing */
+html, body {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden !important;
+}
+
 /* Primary Styles
 ---------------------------------*/
 body {
