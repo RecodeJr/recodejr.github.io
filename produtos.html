@@ -47,7 +47,7 @@
                 <li><a href="index.html#services">Serviços</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="index.html#equipe">Equipe</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </div>
@@ -60,7 +60,7 @@
         <h2 class="wow fadeInDown delay-03s">Produtos</h2>
         <h6 class="wow fadeInUp delay-05s">Aprenda mais sobre linguagem de programação pelos nossos e-books
             autorais.</h6>
-        <div class="produtosContainer wow fadeInUp delay-04s">
+        <div class="produtosContainer align-items-center wow fadeInUp delay-04s">
             <div class="col-sm produtos-box">
                 <img src="./img/produtos/ebook_python.jpg" onmouseover="this. src='./img/produtos/ebook_python_3D.jpg'"
                     onmouseout="this. src='./img/produtos/ebook_python.jpg'" alt="#">
@@ -84,7 +84,8 @@
                 <div class="col-md-5 col-lg-4 wow fadeInLeft delay-05s d-flex flex-column align-items-center">
                     <ul class="social-link">
                         <li class="whatsapp">
-                            <a target="_blank" href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
+                            <a target="_blank"
+                                href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
                                 <img src="img/footer/whatsapp_icon.png">
                             </a>
                         </li>
@@ -104,7 +105,8 @@
                             </a>
                         </li>
                         <li class="facebook">
-                            <a target="_blank" href="https://www.facebook.com/people/Recode-J%C3%BAnior/100012163300536">
+                            <a target="_blank"
+                                href="https://www.facebook.com/people/Recode-J%C3%BAnior/100012163300536">
                                 <img src="img/footer/facebook_icon.png">
                             </a>
                         </li>
@@ -116,15 +118,20 @@
                     </ul>
                 </div>
                 <div class="col-sm mx-auto wow fadeInDown delay-05s">
-                    <img class="footer-logo mt-3" src="img/footer/logo jr._branco.png" alt="" style="max-width: 100%; height: auto; display: block; margin: auto;">
+                    <img class="footer-logo mt-3" src="img/footer/logo jr._branco.png" alt="">
                     <span class="copyright block center">Desde 2016</span>
                 </div>
                 <div class="col-sm wow fadeInRight delay-05s d-flex flex-column align-items-center">
-                    <nobr><h3 class="ml-2 mt-4"><i class="fa-pencil"></i> entre em contato:</h3></nobr>
+                    <nobr>
+                        <h3 class="ml-2 mt-4"><i class="fa-pencil"></i> entre em contato:</h3>
+                    </nobr>
                     <span>
-                        <nobr><b>Telefone:</b> <a target="_blank" href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(75) 98231-6183</a></nobr>
+                        <nobr><b>Telefone:</b> <a target="_blank"
+                                href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(75)
+                                98231-6183</a></nobr>
                         <br>
-                        <nobr><b>Principal:</b> <a href="mailto://comercial@recodejr.com">comercial@recodejr.com</a></nobr>
+                        <nobr><b>Principal:</b> <a href="mailto://comercial@recodejr.com">comercial@recodejr.com</a>
+                        </nobr>
                         <br>
                         <nobr><b>Administrativo:</b> <a href="mailto://daf@recodejr.com">daf@recodejr.com</a></nobr>
                         <br>
@@ -159,43 +166,43 @@
 
     <!-- Script do menu -->
     <script>
-    $(document).ready(function() {
-        // Inicializa WOW
-        new WOW({
-            animateClass: 'animated',
-            offset: 100
-        }).init();
+        $(document).ready(function () {
+            // Inicializa WOW
+            new WOW({
+                animateClass: 'animated',
+                offset: 100
+            }).init();
 
-        // Menu hamburguer
-        $('#hamburger').on('click', function(e) {
-            e.preventDefault();
-            e.stopPropagation();
-            $('.sidebar').toggleClass('active');
-            $('.menu-overlay').toggleClass('active');
-        });
+            // Menu hamburguer
+            $('#hamburger').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('.sidebar').toggleClass('active');
+                $('.menu-overlay').toggleClass('active');
+            });
 
-        // Fecha menu ao clicar fora
-        $(document).on('click', function(e) {
-            if (!$(e.target).closest('.sidebar, #hamburger').length) {
+            // Fecha menu ao clicar fora
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('.sidebar, #hamburger').length) {
+                    $('.sidebar').removeClass('active');
+                    $('.menu-overlay').removeClass('active');
+                }
+            });
+
+            // Previne fechar ao clicar dentro do menu
+            $('.sidebar').on('click', function (e) {
+                e.stopPropagation();
+            });
+
+            // Fecha ao clicar em links
+            $('.sidebar-menu a').on('click', function () {
                 $('.sidebar').removeClass('active');
                 $('.menu-overlay').removeClass('active');
-            }
-        });
+            });
 
-        // Previne fechar ao clicar dentro do menu
-        $('.sidebar').on('click', function(e) {
-            e.stopPropagation();
+            // Menu fixo no scroll
+            $('#menufix').scrollToFixed();
         });
-
-        // Fecha ao clicar em links
-        $('.sidebar-menu a').on('click', function() {
-            $('.sidebar').removeClass('active');
-            $('.menu-overlay').removeClass('active');
-        });
-
-        // Menu fixo no scroll
-        $('#menufix').scrollToFixed();
-    });
     </script>
 </body>
 

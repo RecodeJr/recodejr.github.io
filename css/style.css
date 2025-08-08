@@ -673,6 +673,10 @@ color: #3AC2C2;
 
 /* Team
 ---------------------------------*/
+
+.team-container{
+	padding-left: 15px;
+}
 .team-leader-block{
 	max-width:100%;
 	margin:0 auto;
@@ -967,6 +971,10 @@ color: #3AC2C2;
 .footer-logo{
 	width: 200px;
 	height: 97px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
 }
 .copyright{
 	color:#cccccc;
@@ -1169,7 +1177,10 @@ color: #3AC2C2;
 ---------------------------------*/
 .produtosContainer{
 	margin:0 auto;
-	padding-left: 40px;
+	padding-left: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .produtosContainer::after {
   content: "";
