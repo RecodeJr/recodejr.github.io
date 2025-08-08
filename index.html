@@ -643,38 +643,6 @@ $(document).ready(function() {
         })
     })
 </script>
-<script>
-    $(document).ready(function() {
-        // Toggle menu
-        $('#hamburger').click(function(e) {
-            e.stopPropagation();
-            $('.sidebar').toggleClass('active');
-            $('body').toggleClass('menu-open');
-            $('.menu-overlay').toggleClass('active');
-        });
-
-        // Fechar menu ao clicar fora
-        $(document).click(function(e) {
-            if (!$(e.target).closest('.sidebar, #hamburger').length) {
-                $('.sidebar').removeClass('active');
-                $('body').removeClass('menu-open');
-                $('.menu-overlay').removeClass('active');
-            }
-        });
-
-        // Fechar menu ao clicar em um link
-        $('.sidebar-menu a').click(function() {
-            $('.sidebar').removeClass('active');
-            $('body').removeClass('menu-open');
-            $('.menu-overlay').removeClass('active');
-        });
-
-        // Evitar que cliques dentro do menu fechem ele
-        $('.sidebar').click(function(e) {
-            e.stopPropagation();
-        });
-    });
-</script>
 
 <!-- Scripts de Animação -->
 <script type="text/javascript" src="js/wow.js"></script>
