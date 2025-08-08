@@ -673,6 +673,10 @@ color: #3AC2C2;
 
 /* Team
 ---------------------------------*/
+
+.team-container{
+	padding-left: 15px;
+}
 .team-leader-block{
 	max-width:100%;
 	margin:0 auto;
@@ -967,6 +971,10 @@ color: #3AC2C2;
 .footer-logo{
 	width: 200px;
 	height: 97px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
 }
 .copyright{
 	color:#cccccc;
@@ -986,41 +994,126 @@ color: #3AC2C2;
 	color: #fff;
 }
 .res-nav_click {
-	line-height:38px;
-	font-family: 'FontAwesome';
-	font-size:38px;
-	text-decoration: none !important;
-	color:#777777;
-	font-style:normal;
-	display:none;
-	width:42px;
-	height:27px;
-	margin:20px auto;
-	transition:all 0.3s ease-in-out;
+    position: fixed;
+    top: 24px;
+    left: 24px;
+    font-size: 32px;
+    color: #269c9c;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    display: block;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    box-shadow: none;
+    transition: color 0.3s;
 }
-.res-nav_click:hover, .res-nav_click:active, .res-nav_click:focus {
-	color: #269c9c !important;
+.res-nav_click:hover {
+    color: #127b7b;
 }
-.paddind_footer{
-  padding-bottom: 0 !important;
+
+/* Menu lateral oculto por padrão */
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: -260px; /* Escondido */
+    width: 260px;
+    height: 100vh;
+    background: rgba(30, 30, 30, 0.98);
+    box-shadow: 2px 0 8px rgba(0,0,0,0.12);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1099;
+    opacity: 0;
+    pointer-events: none;
+    transition: left 0.3s, opacity 0.3s;
+    margin: 0;
+    padding: 48px 0 0 0;
+    display: flex;
 }
-.footer ul{
-	display: flex;
-	flex-wrap: wrap;
-  	justify-content: center;
-	align-items: center;
+
+/* Quando aberto, exibe menu */
+.main-nav.show {
+    left: 0;
+    opacity: 1;
+    pointer-events: auto;
+    animation: fadeInLeft 0.3s;
 }
-.fadeInDown{
-	text-align: center;
-	justify-content: center;
+
+/* Animação fadeInLeft */
+@keyframes fadeInLeft {
+    from { left: -260px; opacity: 0; }
+    to { left: 0; opacity: 1; }
 }
-.fadeInDown span{
-	margin-bottom: 10px;
+
+/* Estilo dos itens do menu */
+.main-nav li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
-@media (max-width: 767px){
-	.fadeInRight{
-		text-align: center;
-	}
+
+.main-nav li a {
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: color 0.2s, background 0.2s;
+    padding: 18px 32px;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    border-radius: 0;
+}
+
+.main-nav li a:hover {
+    color: #269c9c;
+    background: rgba(255,255,255,0.08);
+}
+
+.small-logo {
+    text-align: center;
+    margin-bottom: 24px;
+    width: 100%;
+}
+.small-logo img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 16px auto;
+    display: block;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+    .main-nav {
+        width: 80vw;
+        min-width: 180px;
+        padding-top: 32px;
+    }
+    .main-nav li a {
+        font-size: 1rem;
+        padding: 14px 18px;
+    }
+    .small-logo img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Remove barra lateral antiga */
+.main-nav-outer {
+    position: static;
+    background: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 0;
 }
 
 /* Animation Timers
@@ -1084,7 +1177,10 @@ color: #3AC2C2;
 ---------------------------------*/
 .produtosContainer{
 	margin:0 auto;
-	padding-left: 40px;
+	padding-left: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 .produtosContainer::after {
   content: "";
@@ -1109,4 +1205,168 @@ color: #3AC2C2;
 }
 .produtos-box img:hover{
 	opacity: 0.6;
+}
+
+/* Menu Hamburger */
+.hamburger-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    background: none;
+    border: none;
+    color: #269c9c;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s;
+    display: block;
+}
+
+.hamburger-btn:hover {
+    color: #127b7b;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background: rgba(38, 38, 38, 0.98);
+    z-index: 1099;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-menu li a {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar-menu li a:hover {
+    background: rgba(255,255,255,0.1);
+    color: #269c9c;
+    padding-left: 30px;
+}
+
+/* Overlay quando menu está aberto */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1098;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Responsivo */
+@media (max-width: 767px) {
+    .sidebar {
+        width: 250px;
+        left: -250px;
+    }
+    
+    .sidebar.active {
+        left: 0;
+    }
+    
+    .hamburger-btn {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 1100;
+    }
+    
+    .menu-overlay.active {
+        display: block;
+    }
+}
+
+/* Ajustes para tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .sidebar {
+        width: 280px;
+        left: -280px;
+    }
+}
+
+/* Ajustes para dispositivos pequenos */
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        left: -100%;
+    }
+    
+    .hamburger-btn {
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Overlay do menu */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+}
+
+/* Animações do menu */
+.sidebar {
+    transition: left 0.3s ease-in-out;
+}
+
+.menu-overlay {
+    transition: opacity 0.3s ease-in-out;
 }

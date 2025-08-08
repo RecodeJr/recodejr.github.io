@@ -30,33 +30,39 @@
 <body>
     <!--main-nav-start-->
     <nav class="main-nav-outer" id="menufix">
-        <div class="container">
-            <ul class="main-nav">
-                <li class="small-logo">
-                    <a href="index.html#header"><img src="img/recode_logo_escudo.png" alt=""
-                            style="width:55px;height:55px;"></a>
-                </li>
+        <button class="hamburger-btn" id="hamburger" aria-label="Menu">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html#header" class="logo-link">
+                    <img src="img/recode_logo_escudo.png" alt="Logo" class="sidebar-logo">
+                </a>
+            </div>
+
+            <ul class="sidebar-menu">
                 <li><a href="index.html#about">Sobre</a></li>
-                <li><a href="index.html#service">Serviços</a></li>
+                <li><a href="index.html#services">Serviços</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="index.html#equipe">Equipe</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
         </div>
     </nav>
+    <div class="menu-overlay"></div>
     <!--main-nav-end-->
 
     <!--Conteudo-->
     <section class="main-section team" id="team">
-
+        <div class="team-container">
             <div class="row">
                 <h2 class="mx-auto">Orientador</h2>
             </div>
 
             <div class="row">
-                <div class="col-xs-6 col-md-2 mx-auto">
+                <div class="d-flex col-xs-6 col-md-2 mx-auto">
                     <div class="team-leader-box wow fadeInDown delay-06s">
                         <div class="team-leader">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
@@ -69,7 +75,7 @@
                             </ul>
                         </div>
                         <h3 class="wow fadeInDown delay-06s">Tassio Vale</h3>
-                        <span class="wow fadeInDown delay-06s">Professor</span>
+                        <span class="wow fadeInDown delay-09s">Professor</span>
                     </div>
                 </div>
             </div>
@@ -79,9 +85,9 @@
             </div>
 
             <div class="row">
-                <div class="col-xs-6 col-md-2 ml-auto">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/BrenoLuz.png" alt="">
                             <ul>
@@ -91,47 +97,48 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-09s">Breno Luz</h3>
-                        <span class="wow fadeInDown delay-03s">Presidente</span>
+                        <h3 class="wow fadeInDown delay-06s">Breno Luz</h3>
+                        <span class="wow fadeInDown delay-09s">Presidente</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!--Picture Shadow -->
-                <img src="img/membros/GabrielSodre.jpeg" alt="">
+                            <img src="img/membros/GabrielSodre.jpeg" alt="">
                             <ul>
                                 <li>
                                     <a target="_blank" href="https://github.com/GabrielSodre02" class="fa-github"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Gabriel Sodré</h3>
-                        <span class="wow fadeInDown delay-03s">Vice-Presidente</span>
+                        <h3 class="wow fadeInDown delay-06s">Gabriel Sodré</h3>
+                        <span class="wow fadeInDown delay-09s">Vice-Presidente</span>
                     </div>
-                </div> 
+                </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!--Picture Shadow -->
-                <img src="img/membros/luciano.jpg" alt="">
+                            <img src="img/membros/luciano.jpg" alt="">
                             <ul>
                                 <li>
-                                    <a target="_blank" href="https://www.linkedin.com/in/luciano-sabino-da-silva-neto-60338a219/"
+                                    <a target="_blank"
+                                        href="https://www.linkedin.com/in/luciano-sabino-da-silva-neto-60338a219/"
                                         class="fa-linkedin"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Luciano Sabino</h3>
-                        <span class="wow fadeInDown delay-03s">Diretor de Projetos</span>
+                        <h3 class="wow fadeInDown delay-06s">Luciano Sabino</h3>
+                        <span class="wow fadeInDown delay-09s">Diretor de Projetos</span>
                     </div>
-                </div> 
+                </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/athur.png" alt="">
                             <ul>
@@ -141,33 +148,35 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-09s">Arthur Rocha</h3>
+                        <h3 class="wow fadeInDown delay-06s">Arthur Rocha</h3>
                         <span class="wow fadeInDown delay-09s">Diretor Gestão de Pessoas</span>
                     </div>
                 </div>
 
 
-                <div class="col-xs-6 col-md-2 mr-auto">
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/PedroHenrique.jpeg" alt="">
                             <ul>
                                 <li>
-                                    <a target="_blank" href="https://www.instagram.com/pedrohamorim00?igsh=MWcwYTAwdHRxZWo5Yw==" class="fa-instagram"></a>
+                                    <a target="_blank"
+                                        href="https://www.instagram.com/pedrohamorim00?igsh=MWcwYTAwdHRxZWo5Yw=="
+                                        class="fa-instagram"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Pedro Henrique</h3>
-                        <span class="wow fadeInDown delay-03s">Diretor de Marketing e Vendas</span>
+                        <h3 class="wow fadeInDown delay-06s">Pedro Henrique</h3>
+                        <span class="wow fadeInDown delay-09s">Diretor de Marketing e Vendas</span>
                     </div>
-                </div> 
+                </div>
             </div>
-            
+
             <div class="row">
-                <div class="col-xs-6 col-md-2 ml-auto">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Fernando dos Santos.jpg" alt="">
                             <ul>
@@ -176,64 +185,63 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Fernando dos Santos</h3>
-                        <span class="wow fadeInDown delay-03s">Diretor de Marketing e Vendas</span>
+                        <h3 class="wow fadeInDown delay-06s">Fernando dos Santos</h3>
+                        <span class="wow fadeInDown delay-09s">Diretor de Marketing e Vendas</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Lucas.jpg" alt="">
                             <ul>
                                 <li>
-                                    <a target="_blank" href="" 
-                                    class=""></a>
+                                    <a target="_blank" href="" class=""></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Lucas Souza</h3>
-                        <span class="wow fadeInDown delay-03s">Diretor do Administrativo e Financeiro</span>
+                        <h3 class="wow fadeInDown delay-06s">Lucas Souza</h3>
+                        <span class="wow fadeInDown delay-09s">Diretor do Administrativo e Financeiro</span>
                     </div>
                 </div>
-        
-            <div class="col-xs-6 col-md-2">
+
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Thiago Sousa.png" alt="">
                             <ul>
                                 <li>
                                     <a target="_blank" href="https://github.com/ThiagoSousa81#readme"
-                                    class="fa-github"></a>
+                                        class="fa-github"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Thiago Sousa</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Thiago Sousa</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
-                
-            <div class="col-xs-6 col-md-2">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/semfoto.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="" class=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-03s">Wanderson Gustavo</h3>
-                    <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
-                </div>
-            </div>
-                
-                <div class="col-xs-6 col-md-2 mr-auto">
+
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/semfoto.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="" class=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Wanderson Gustavo</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
+                    </div>
+                </div>
+
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -242,18 +250,18 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Vinícius Nascimento</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Vinícius Nascimento</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
             </div>
 
-                
+
 
             <div class="row">
-                <div class="col-xs-6 col-md-2 ml-auto">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -262,14 +270,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Alexandre França</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Alexandre França</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -278,14 +286,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Ana Carvalho</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Ana Carvalho</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -294,14 +302,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Arthur Legal</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Arthur Legal</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/kevin.jpg" alt="">
                             <ul>
@@ -310,15 +318,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Arthur Kévin</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvovedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Arthur Kévin</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvovedor</span>
                     </div>
                 </div>
 
-            
-                <div class="col-xs-6 col-md-2 mr-auto">
+
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -327,16 +335,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Bernardo Mascarenhas</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvovedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Bernardo Mascarenhas</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvovedor</span>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-6 col-md-2 ml-auto">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -345,14 +353,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Catarine Pires</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedora</span>
+                        <h3 class="wow fadeInDown delay-06s">Catarine Pires</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedora</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/crismar.jpg" alt="">
                             <ul>
@@ -362,14 +370,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Crismar Cruz</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Crismar Cruz</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Emily.jpg" alt="">
                             <ul>
@@ -379,15 +387,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Emily de Souza</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedora</span>
+                        <h3 class="wow fadeInDown delay-06s">Emily de Souza</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedora</span>
                     </div>
                 </div>
 
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/gustavo.jpg" alt="">
                             <ul>
@@ -398,14 +406,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Gustavo Nascimento</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Gustavo Nascimento</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2 mr-auto">
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/HenriqueYamaguchi.jpg" alt="">
                             <ul>
@@ -415,16 +423,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Henrique Yamaguti</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Henrique Yamaguti</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-6 col-md-2 ml-auto">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Janine Carvalho.jpg" alt="">
                             <ul>
@@ -435,14 +443,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Janine Carvalho</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedora</span>
+                        <h3 class="wow fadeInDown delay-06s">Janine Carvalho</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedora</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Julia Nunes.jpg" alt="">
                             <ul>
@@ -453,15 +461,15 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Júlia Nunes</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedora</span>
+                        <h3 class="wow fadeInDown delay-06s">Júlia Nunes</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedora</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <!-- apagar -->
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/julian.jpg" alt="">
                             <ul>
@@ -471,14 +479,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Julian Vicente</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Julian Vicente</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/LincolnMeira.jpg" alt="">
                             <ul>
@@ -487,14 +495,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Lincoln Meira</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Lincoln Meira</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2 mr-auto">
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -503,16 +511,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Luiz Campos</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Luiz Campos</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-6 col-md-2 ml-auto">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/LuisHenrique.jpeg" alt="">
                             <ul>
@@ -521,14 +529,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Luis Henrique</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Luis Henrique</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -537,14 +545,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Marcello dos Santos</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Marcello dos Santos</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Newton Luiz.jpg" alt="">
                             <ul>
@@ -554,14 +562,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Newton Luiz</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Newton Luiz</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Nicolas.jpg" alt="">
                             <ul>
@@ -571,14 +579,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Nicolas Santiago</h3>
-                        <span class="wow fadeInDown delay-03s">Gestão de Pessoas</span>
+                        <h3 class="wow fadeInDown delay-06s">Nicolas Santiago</h3>
+                        <span class="wow fadeInDown delay-09s">Gestão de Pessoas</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2 mr-auto">
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Pedro Paulo.jpg" alt="">
                             <ul>
@@ -587,51 +595,50 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Pedro Paulo</h3>
-                        <span class="wow fadeInDown delay-03s">Marketing e Vendas</span>
+                        <h3 class="wow fadeInDown delay-06s">Pedro Paulo</h3>
+                        <span class="wow fadeInDown delay-09s">Marketing e Vendas</span>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xs-6 col-md-2 ml-auto">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/RafaelDamasceno.jpg" alt="">
                             <ul>
                                 <li>
-                                    <a target="_blank"
-                                    href="https://www.linkedin.com/in/rafael-damasceno-why/"
-                                    class="fa-linkedin"></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/rafael-damasceno-why/"
+                                        class="fa-linkedin"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Rafael Damasceno</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Rafael Damasceno</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="d-flex col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/robson.jpg" alt="">
                             <ul>
                                 <li>
                                     <a target="_blank" href="https://www.instagram.com/robson.santos_24/"
-                                    class="fa-instagram"></a>
+                                        class="fa-instagram"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Robson Santos</h3>
-                        <span class="wow fadeInDown delay-03s">Administrativo e Financeiro</span>
+                        <h3 class="wow fadeInDown delay-06s">Robson Santos</h3>
+                        <span class="wow fadeInDown delay-09s">Administrativo e Financeiro</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2 mr-auto">
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-06s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/semfoto.jpg" alt="">
                             <ul>
@@ -640,245 +647,248 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Vitor Fiuza</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
+                        <h3 class="wow fadeInDown delay-06s">Vitor Fiuza</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
                     </div>
                 </div>
             </div>
-        
-        <div class="row">
-            <h2 class="mx-auto">Conselheiros</h2>
-        </div>
 
-        <div class="row">
-            <div class="col-xs-6 col-md-2 mx-auto">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/Gustavo celestino.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://www.instagram.com/guga_celestino/" class="fa-instagram"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-03s">Gustavo Celestino</h3>
-                    <span class="wow fadeInDown delay-03s">Conselheiro</span>
-                </div>
+            <div class="row">
+                <h2 class="mx-auto">Conselheiros</h2>
             </div>
-        </div>
 
-
-        <div class="row">
-            <h2 class="mx-auto">Membros Honorários</h2>
-        </div>
-
-        <div class="row">
-            <div class="col-xs-6 col-md-2 ml-auto">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/tairone.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/taironedias" class="fa-github"></a>
-                            </li>
-                        </ul>
+            <div class="row">
+                <div class="d-flex col-xs-6 col-md-2 mx-auto">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/Gustavo celestino.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/guga_celestino/"
+                                        class="fa-instagram"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Gustavo Celestino</h3>
+                        <span class="wow fadeInDown delay-09s">Conselheiro</span>
                     </div>
-                    <h3 class="wow fadeInDown delay-03s">Tairone Dias</h3>
-                    <span class="wow fadeInDown delay-03s">Presidente Fundador</span>
                 </div>
             </div>
 
-            <div class="col-xs-6 col-md-2">
-                <div class="team-leader-box">
-                    <div class="team-leader  wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/joshua.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/joshuapassos" class="fa-github"></a>
-                            </li>
-                        </ul>
+
+            <div class="row">
+                <h2 class="mx-auto">Membros Honorários</h2>
+            </div>
+
+            <div class="row">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/tairone.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/taironedias" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Tairone Dias</h3>
+                        <span class="wow fadeInDown delay-09s">Presidente Fundador</span>
                     </div>
-                    <h3 class="wow fadeInDown delay-06s">Joshua Passos</h3>
-                    <span class="wow fadeInDown delay-06s">Diretor Fundador</span>
+                </div>
+
+                <div class="d-flex col-xs-6 col-md-2">
+                    <div class="team-leader-box">
+                        <div class="team-leader  wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/joshua.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/joshuapassos" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Joshua Passos</h3>
+                        <span class="wow fadeInDown delay-09s">Diretor Fundador</span>
+                    </div>
+                </div>
+
+                <div class="d-flex col-xs-6 col-md-2">
+                    <div class="team-leader-box">
+                        <div class="team-leader  wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/maise.jpg" alt="">
+                            <ul>
+                                <li><a target="_blank" href="https://github.com/esiammd" class="fa-github"></a></li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Maise Mendes</h3>
+                        <span class="wow fadeInDown delay-09s">Ex-Presidente</span>
+                    </div>
+                </div>
+
+                <div class="d-flex col-xs-6 col-md-2">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/maxwell.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/maxlincoln" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Maxwell Lincoln</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
+                    </div>
+                </div>
+
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/laercio.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/LaercioLeal" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Laércio Leal</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedor</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-xs-6 col-md-2">
-                <div class="team-leader-box">
-                    <div class="team-leader  wow fadeInDown delay-06s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/maise.jpg" alt="">
-                        <ul>
-                            <li><a target="_blank" href="https://github.com/esiammd" class="fa-github"></a></li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-06s">Maise Mendes</h3>
-                    <span class="wow fadeInDown delay-03s">Ex-Presidente</span>
-                </div>
+            <div class="row">
+                <h2 class="mx-auto">Pós-juniores</h2>
             </div>
 
-            <div class="col-xs-6 col-md-2">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/maxwell.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/maxlincoln" class="fa-github"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">Maxwell Lincoln</h3>
-                    <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
-                </div>
-            </div>
-
-            <div class="col-xs-6 col-md-2 mr-auto">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/laercio.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/LaercioLeal" class="fa-github"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">Laércio Leal</h3>
-                    <span class="wow fadeInDown delay-03s">Desenvolvedor</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <h2 class="mx-auto">Pós-juniores</h2>
-        </div>
-
-        <!-- A sessão de pós-juniores é destinada a membros que deixaram a empresa no ultimo ano. 
+            <!-- A sessão de pós-juniores é destinada a membros que deixaram a empresa no ultimo ano. 
                      Ou seja, nela ficarão por apenas UM ANO os membros que deixaram a empresa. -->
-            
-        <div class="row">
-            <div class="col-xs-6 col-md-2 ml-auto">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/lais.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/lais-cardoso" class="fa-github"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-03s">Laís Medeiros</h3>
-                    <span class="wow fadeInDown delay-03s">Conselheira</span>
-                </div>
-            </div>
 
-            <div class="col-xs-6 col-md-2">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/victor.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/victor25267" class="fa-github"></a>
-                            </li>
-                        </ul>
+            <div class="row">
+                <div class="d-flex col-xs-6 col-md-2 ml-auto">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/lais.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/lais-cardoso" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Laís Medeiros</h3>
+                        <span class="wow fadeInDown delay-09s">Conselheira</span>
                     </div>
-                    <h3 class="wow fadeInDown delay-03s">Paulo Victor</h3>
-                    <span class="wow fadeInDown delay-03s">Conselheiro</span>
                 </div>
-            </div>
-            
-            <div class="col-xs-6 col-md-2">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-09s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/cleiton.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/frpimentel" class="fa-github"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-09s">Cleiton França</h3>
-                    <span class="wow fadeInDown delay-03s">Presidente</span>
-                </div>
-            </div>
 
-            <div class="col-xs-6 col-md-2">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/ivania.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank"
-                                    href="https://www.instagram.com/ivania.dias.14/?igshid=YmMyMTA2M2Y%3D"
-                                    class="fa-instagram"></a>
-                            </li>
-                        </ul>
+                <div class="d-flex col-xs-6 col-md-2">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/victor.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/victor25267" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Paulo Victor</h3>
+                        <span class="wow fadeInDown delay-09s">Conselheiro</span>
                     </div>
-                    <h3 class="wow fadeInDown delay-03s">Ivania Dias</h3>
-                    <span class="wow fadeInDown delay-03s">Marketing e Vendas</span>
                 </div>
-            </div>
 
-            <div class="col-xs-6 col-md-2 mr-auto">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/vyckie.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/vyckie" class="fa-github"></a>
-                            </li>
-                        </ul>
+                <div class="d-flex col-xs-6 col-md-2">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/cleiton.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/frpimentel" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Cleiton França</h3>
+                        <span class="wow fadeInDown delay-09s">Presidente</span>
                     </div>
-                    <h3 class="wow fadeInDown delay-03s">Vyckie Santos</h3>
-                    <span class="wow fadeInDown delay-03s">Desenvolvedora</span>
+                </div>
+
+                <div class="d-flex col-xs-6 col-md-2">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/ivania.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank"
+                                        href="https://www.instagram.com/ivania.dias.14/?igshid=YmMyMTA2M2Y%3D"
+                                        class="fa-instagram"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Ivania Dias</h3>
+                        <span class="wow fadeInDown delay-09s">Marketing e Vendas</span>
+                    </div>
+                </div>
+
+                <div class="d-flex col-xs-6 col-md-2 mr-auto">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-06s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/vyckie.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/vyckie" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Vyckie Santos</h3>
+                        <span class="wow fadeInDown delay-09s">Desenvolvedora</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-        <div class="row">
-            <div class="col-xs-6 col-md-2 ml-auto">
-                    <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                        <img src="img/membros/victoria.jpg" alt="">
-                        <ul>
-                            <li>
-                                <a target="_blank" href="https://github.com/VictoriaOli" class="fa-github"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="wow fadeInDown delay-03s">Victória Oliveira</h3>
-                    <span class="wow fadeInDown delay-03s">Conselheira</span>
+    <div class="row">
+        <div class="d-flex col-xs-6 col-md-2 ml-auto">
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                    <img src="img/membros/victoria.jpg" alt="">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/VictoriaOli" class="fa-github"></a>
+                        </li>
+                    </ul>
                 </div>
+                <h3 class="wow fadeInDown delay-06s">Victória Oliveira</h3>
+                <span class="wow fadeInDown delay-09s">Conselheira</span>
             </div>
+        </div>
 
 
-                <div class="col-xs-6 col-md-2 mr-auto">
-                    <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
-                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                            <img src="img/membros/alanda.jpg" alt="">
-                            <ul>
-                                <li>
-                                    <a target="_blank" href="https://github.com/Alanda-Pac" class="fa-github"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <h3 class="wow fadeInDown delay-03s">ALanda Paciência</h3>
-                        <span class="wow fadeInDown delay-03s">Desenvolvedora</span>
-                    </div>
+        <div class="d-flex col-xs-6 col-md-2 mr-auto">
+            <div class="team-leader-box">
+                <div class="team-leader wow fadeInDown delay-06s">
+                    <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                    <img src="img/membros/alanda.jpg" alt="">
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://github.com/Alanda-Pac" class="fa-github"></a>
+                        </li>
+                    </ul>
                 </div>
+                <h3 class="wow fadeInDown delay-06s">ALanda Paciência</h3>
+                <span class="wow fadeInDown delay-09s">Desenvolvedora</span>
             </div>
+        </div>
+    </div>
+    </div>
     <!--Conteudo-->
 
     <!-- Message -->
@@ -889,13 +899,15 @@
     </section>
 
 
+    <!-- footer-start -->
     <footer class="footer" id="contact">
-        <div class="container mx-auto">
-            <div class="row">
-                <div class="col-md-5">
+        <div class="container">
+            <div class="row justify-content-center text-center align-items-center">
+                <div class="col-md-5 col-lg-4 wow fadeInLeft delay-05s d-flex flex-column align-items-center">
                     <ul class="social-link">
                         <li class="whatsapp">
-                            <a target="_blank" href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
+                            <a target="_blank"
+                                href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
                                 <img src="img/footer/whatsapp_icon.png">
                             </a>
                         </li>
@@ -927,22 +939,27 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm fadeInDown delay-05s">
+                <div class="col-sm mx-auto wow fadeInDown delay-05s">
                     <img class="footer-logo mt-3" src="img/footer/logo jr._branco.png" alt="">
-                    <span class="copyright">Desde 2016</span>
+                    <span class="copyright block center">Desde 2016</span>
                 </div>
-                <div class="col-sm">
-                    <h3 class="ml-2 mt-4"><i class="fa-pencil"></i> entre em contato:</h3>
+                <div class="col-sm wow fadeInRight delay-05s d-flex flex-column align-items-center">
+                    <nobr>
+                        <h3 class="ml-2 mt-4"><i class="fa-pencil"></i> entre em contato:</h3>
+                    </nobr>
                     <span>
-                        <b>Telefone:</b> <a target="_blank" href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es">(75) 98231-6183</a>
+                        <nobr><b>Telefone:</b> <a target="_blank"
+                                href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(75)
+                                98231-6183</a></nobr>
                         <br>
-                        <b>Principal:</b> <a href="mailto://comercial@recodejr.com">comercial@recodejr.com</a>
+                        <nobr><b>Principal:</b> <a href="mailto://comercial@recodejr.com">comercial@recodejr.com</a>
+                        </nobr>
                         <br>
-                        <b>Administrativo:</b> <a href="mailto://daf@recodejr.com">daf@recodejr.com</a>
+                        <nobr><b>Administrativo:</b> <a href="mailto://daf@recodejr.com">daf@recodejr.com</a></nobr>
                         <br>
-                        <b>Projetos:</b> <a href="mailto://projetos@recodejr.com">projetos@recodejr.com</a>
+                        <nobr><b>Projetos:</b> <a href="mailto://projetos@recodejr.com">projetos@recodejr.com</a></nobr>
                         <br>
-                        <b>RH:</b> <a href="mailto://dgp@recodejr.com">dgp@recodejr.com</a>
+                        <nobr><b>RH:</b> <a href="mailto://dgp@recodejr.com">dgp@recodejr.com</a></nobr>
                     </span>
                 </div>
             </div>
@@ -953,74 +970,78 @@
                 You can buy this theme without footer links online at: https://bootstraptaste.com/buy/?theme=Knight
             -->
     </footer>
+    <!-- footer-end -->
 
+    <!-- Scripts essenciais -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scripts auxiliares -->
+    <script src="js/jquery-scrolltofixed.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/classie.js"></script>
+
+    <!-- Script do Menu -->
+    <script>
+        $(document).ready(function () {
+            // Inicializa WOW
+            new WOW({
+                animateClass: 'animated',
+                offset: 100
+            }).init();
+
+            // Menu hamburger
+            $('#hamburger').on('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                $('.sidebar').toggleClass('active');
+                $('.menu-overlay').toggleClass('active');
+                console.log('Menu clicked'); // Debug line
+            });
+
+            // Fecha menu ao clicar fora
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('.sidebar, #hamburger').length) {
+                    $('.sidebar').removeClass('active');
+                    $('.menu-overlay').removeClass('active');
+                }
+            });
+
+            // Previne fechar ao clicar dentro do menu
+            $('.sidebar').on('click', function (e) {
+                e.stopPropagation();
+            });
+
+            // Fecha ao clicar em links
+            $('.sidebar-menu a').on('click', function () {
+                $('.sidebar').removeClass('active');
+                $('.menu-overlay').removeClass('active');
+            });
+
+            // Scroll suave
+            $('a[href*="#"]').not('[href="#"]').click(function (event) {
+                var $anchor = $(this);
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                    location.hostname == this.hostname
+                ) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top - 80
+                        }, 1000, 'easeInOutExpo');
+                    }
+                }
+            });
+
+            // Menu fixo no scroll
+            $('#menufix').scrollToFixed();
+        });
+    </script>
 </body>
 
-<!-- Js -->
-
-<!-- Bootstrap script -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-<!-- Extra scripts -->
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script> <!-- Navbar scrolling -->
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> <!-- Smooth animation -->
-<script type="text/javascript" src="js/wow.js"></script> <!-- Page smooth animation -->
-<script type="text/javascript" src="js/classie.js"></script> <!-- Page host library -->
-
-<!-- Navbar scrolling script-->
-<script type="text/javascript">
-    $(document).ready(function (e) {
-        $('#menufix').scrollToFixed();
-        $('.res-nav_click').click(function () {
-            $('.main-nav').slideToggle();
-            return false
-        });
-    });
-</script>
-
-<!-- Page smooth animation script -->
-<script>
-    wow = new WOW({
-        animateClass: 'animated',
-        offset: 100
-    });
-    wow.init();
-</script>
-
-<!-- Smooth page scrolling -->
-<script type="text/javascript">
-    $(window).load(function () {
-        $('.conhc').bind('click', function (event) {
-            var $anchor = $(this);
-
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 102
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-        });
-    })
-
-    $(window).load(function () {
-        $('.main-nav li a').bind('click', function (event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 102
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-        });
-    })
-</script>
-
 </html>
-
-
-
-
-
