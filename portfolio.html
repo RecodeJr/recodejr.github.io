@@ -29,31 +29,49 @@
 
 <body>
 
-    <!--main-nav-start-->
-    <nav class="main-nav-outer" id="menufix">
-        <button class="hamburger-btn" id="hamburger" aria-label="Menu">
-            <i class="fa fa-bars"></i>
-        </button>
-
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <a href="index.html#header" class="logo-link">
-                    <img src="img/recode_logo_escudo.png" alt="Logo" class="sidebar-logo">
-                </a>
+    <!-- Desktop Navbar -->
+    <div class="navbar-desktop">
+        <nav class="main-nav-outer" id="menufix">
+            <div class="container">
+                <ul class="main-nav">
+                    <li class="small-logo">
+                        <a href="#header"><img src="img/recode_logo_escudo.png" alt="" style="width:55px;height:55px;"></a>
+                    </li>
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#services">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
             </div>
+        </nav>
+    </div>
 
-            <ul class="sidebar-menu">
-                <li><a href="index.html#about">Sobre</a></li>
-                <li><a href="index.html#services">Serviços</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="equipe.html">Equipe</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="menu-overlay"></div>
-    <!--main-nav-end-->
+    <!-- Mobile Navbar -->
+    <div class="navbar-mobile">
+        <nav class="main-nav-outer" id="menufix-mobile">
+            <button class="hamburger-btn" id="hamburger" aria-label="Menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <a href="index.html#header" class="logo-link">
+                        <img src="img/recode_logo_escudo.png" alt="Logo" class="sidebar-logo">
+                    </a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#services">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-overlay"></div>
+    </div>
 
     <!--main-section-start-->
     <section class="main-section paddind" id="portfolio">
