@@ -60,23 +60,49 @@
     </div>
     <!-- header-end -->
 
-    <nav class="main-nav-outer" id="menufix">
-        <!-- main-nav-start -->
-        <div class="container">
-            <ul class="main-nav">
-                <li class="small-logo">
-                    <a href="#header"><img src="img/recode_logo_escudo.png" alt="" style="width:55px;height:55px;"></a>
-                </li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="portfolio.html">Portfólio</a></li>
-                <li><a href="#equipe">Equipe</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <a class="res-nav_click" href="#"><i class="fa-bars"></i></a>
-        </div>
-    </nav>
-    <!-- main-nav-end -->
+    <!-- Desktop Navbar -->
+    <div class="navbar-desktop">
+        <nav class="main-nav-outer" id="menufix">
+            <div class="container">
+                <ul class="main-nav">
+                    <li class="small-logo">
+                        <a href="#header"><img src="img/recode_logo_escudo.png" alt="" style="width:55px;height:55px;"></a>
+                    </li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Navbar -->
+    <div class="navbar-mobile">
+        <nav class="main-nav-outer" id="menufix-mobile">
+            <button class="hamburger-btn" id="hamburger" aria-label="Menu">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-header">
+                    <a href="index.html#header" class="logo-link">
+                        <img src="img/recode_logo_escudo.png" alt="Logo" class="sidebar-logo">
+                    </a>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="index.html#about">Sobre</a></li>
+                    <li><a href="index.html#services">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu-overlay"></div>
+    </div>
 
     <section class="main-section client-part" id="about">
         <!-- main-section client-part-start -->
@@ -211,24 +237,42 @@
             <div class="row">
                 <div class="col-xs-6 col-md-2 ml-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader wow fadeInDown delay-02s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                            <img src="img/membros/vinicyus.jpg" alt="">
+                            <img src="img/membros/BrenoLuz.png" alt="">
                             <ul>
                                 <li>
-                                    <a target="_blank" href="https://github.com/MVinicyuss"
-                                        class="fa-github"></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/brenoluzc/"
+                                        class="fa-linkedin"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-09s">Marcos Vinicyus</h3>
+                        <h3 class="wow fadeInDown delay-02s">Breno Luz</h3>
                         <span class="wow fadeInDown delay-03s">Presidente</span>
                     </div>
                 </div>
 
-                <div class="col-xs-6 col-md-2">
+                <div class="col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-02s">
+                            <div class="team-leader-shadow"></div> <!--Picture Shadow -->
+                <img src="img/membros/GabrielSodre.jpeg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/GabrielSodre02" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-02s">Gabriel Sodré</h3>
+                        <span class="wow fadeInDown delay-03s">Vice-Presidente</span>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="col-xs-6 col-md-2 ml-auto">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-02s">
                             <div class="team-leader-shadow"></div> <!--Picture Shadow -->
                 <img src="img/membros/luciano.jpg" alt="">
                             <ul>
@@ -238,14 +282,14 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Luciano Sabino</h3>
+                        <h3 class="wow fadeInDown delay-02s">Luciano Sabino</h3>
                         <span class="wow fadeInDown delay-03s">Diretor de Projetos</span>
                     </div>
                 </div> 
 
                 <div class="col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-09s">
+                        <div class="team-leader wow fadeInDown delay-02s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/athur.png" alt="">
                             <ul>
@@ -255,31 +299,47 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-09s">Arthur Rocha</h3>
-                        <span class="wow fadeInDown delay-09s">Diretor Gestão de Pessoas</span>
+                        <h3 class="wow fadeInDown delay-02s">Arthur Rocha</h3>
+                        <span class="wow fadeInDown delay-03s">Diretor Gestão de Pessoas</span>
                     </div>
                 </div>
 
 
                 <div class="col-xs-6 col-md-2">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-02s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
-                            <img src="img/membros/Gustavo celestino.jpg" alt="">
+                            <img src="img/membros/PedroHenrique.jpeg" alt="">
                             <ul>
                                 <li>
-                                    <a target="_blank" href="https://www.instagram.com/guga_celestino/" class="fa-instagram"></a>
+                                    <a target="_blank" href="https://www.instagram.com/pedrohamorim00?igsh=MWcwYTAwdHRxZWo5Yw==" class="fa-instagram"></a>
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Gustavo Celestino</h3>
-                        <span class="wow fadeInDown delay-03s">Diretor de Marketing e vendas</span>
+                        <h3 class="wow fadeInDown delay-02s">Pedro Henrique</h3>
+                        <span class="wow fadeInDown delay-03s">Diretor de Marketing e Vendas</span>
                     </div>
                 </div> 
                 
+                <div class="col-xs-6 col-md-2">
+                    <div class="team-leader-box">
+                        <div class="team-leader wow fadeInDown delay-02s">
+                            <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
+                            <img src="img/membros/Fernando dos Santos.jpg" alt="">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://github.com/aglomera" class="fa-github"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="wow fadeInDown delay-02s">Fernando dos Santos</h3>
+                        <span class="wow fadeInDown delay-03s">Diretor de Marketing e Vendas</span>
+                    </div>
+                </div> 
+
                 <div class="col-xs-6 col-md-2 mr-auto">
                     <div class="team-leader-box">
-                        <div class="team-leader wow fadeInDown delay-03s">
+                        <div class="team-leader wow fadeInDown delay-02s">
                             <div class="team-leader-shadow"></div> <!-- Picture Shadow -->
                             <img src="img/membros/Lucas.jpg" alt="">
                             <ul>
@@ -289,7 +349,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <h3 class="wow fadeInDown delay-03s">Lucas Souza</h3>
+                        <h3 class="wow fadeInDown delay-02s">Lucas Souza</h3>
                         <span class="wow fadeInDown delay-03s">Diretor do Administrativo e Financeiro</span>
                     </div>
                 </div>
@@ -390,6 +450,11 @@
             <div class="row">
                 <div class="col-md-5 wow fadeInLeft delay-05s">
                     <ul class="social-link">
+                        <li class="whatsapp">
+                            <a target="_blank" href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
+                                <img src="img/footer/whatsapp_icon.png">
+                            </a>
+                        </li>
                         <li class="github">
                             <a target="_blank" href="https://github.com/recodejr">
                                 <img src="img/footer/github_icon.png">
@@ -401,13 +466,12 @@
                             </a>
                         </li>
                         <li class="linkedin">
-                            <a target="_blank" href="https://www.linkedin.com/company/recode-jr">
+                            <a target="_blank" href="https://www.linkedin.com/company/recodejr/">
                                 <img src="img/footer/linkedin_icon.png">
                             </a>
                         </li>
                         <li class="facebook">
-                            <a target="_blank"
-                                href="https://www.facebook.com/people/Recode-J%C3%BAnior/100012163300536">
+                            <a target="_blank" href="https://www.facebook.com/people/Recode-J%C3%BAnior/100012163300536">
                                 <img src="img/footer/facebook_icon.png">
                             </a>
                         </li>
@@ -426,6 +490,8 @@
                 <div class="col-sm wow fadeInRight delay-05s">
                     <h3 class="ml-2 mt-4"><i class="fa-pencil"></i> entre em contato:</h3>
                     <span>
+                        <b>Telefone:</b> <a target="_blank" href="https://wa.me/557582316183?text=Olá,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(75) 98231-6183</a>
+                        <br>
                         <b>Principal:</b> <a href="mailto://comercial@recodejr.com">comercial@recodejr.com</a>
                         <br>
                         <b>Administrativo:</b> <a href="mailto://daf@recodejr.com">daf@recodejr.com</a>
@@ -448,7 +514,6 @@
                 You can buy this theme without footer links online at: https://bootstraptaste.com/buy/?theme=Knight
             -->
     </footer>
-
 </body>
 
 <!-- Js -->
@@ -545,6 +610,40 @@
             owl.trigger('stop.owl.autoplay')
         })
     })
+</script>
+
+<script>
+    $(document).ready(function () {
+        // Menu hamburguer
+        $('#hamburger').on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('.sidebar').toggleClass('active');
+            $('.menu-overlay').toggleClass('active');
+        });
+
+        // Fecha menu ao clicar fora
+        $(document).on('click', function (e) {
+            if (!$(e.target).closest('.sidebar, #hamburger').length) {
+                $('.sidebar').removeClass('active');
+                $('.menu-overlay').removeClass('active');
+            }
+        });
+
+        // Previne fechar ao clicar dentro do menu
+        $('.sidebar').on('click', function (e) {
+            e.stopPropagation();
+        });
+
+        // Fecha ao clicar em links
+        $('.sidebar-menu a').on('click', function () {
+            $('.sidebar').removeClass('active');
+            $('.menu-overlay').removeClass('active');
+        });
+
+        // Menu fixo no scroll
+        $('#menufix-mobile').scrollToFixed();
+    });
 </script>
 
 </html>
