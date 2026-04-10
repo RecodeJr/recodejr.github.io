@@ -1,0 +1,327 @@
+[33m6305df6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfrontend-membros[m[33m, [m[1;31morigin/frontend-membros[m[33m)[m Atualizando fotos dos membros e corrigindo diretorias
+[33m905a513[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m :sparkles: feat: links dos ebooks
+[33mb94fd91[m :bug: fix: Retorno para a pagina inicial
+[33m2055513[m integrated desktop navbar with the new mobile version
+[33mc33ec75[m updated staff
+[33m25482b2[m new mobile menu now works alongside the desktop one
+[33m4d385cb[m Retirada de Julian Vicente
+[33m270609f[m Atualização dos nome
+[33m42c8e39[m faster portrait animations for a smoother mobile experience
+[33m6788b9c[m fixed horizontal overflowing on smaller viewports
+[33m7192e27[m tried to purge demon from index.html
+[33m5a4030d[m updated nav menu + layout adjustments for different aspect ratios
+[33m1d6dbfe[m minor general fixes to responsiveness
+[33m3084814[m overall enhancements to responsiveness
+[33me7fee69[m fixed hamburger menu behavior
+[33m90fcd2d[m Implement sidebar navigation and hamburger menu across multiple pages
+[33m1430187[m responsive css
+[33m8583325[m responsive css
+[33m2f15dc1[m contact final page
+[33ma82eedf[m contact final page
+[33me4086df[m Merge pull request #41 from RecodeJr/produtos.html
+[33mba43a83[m updated navbar
+[33ma2b53de[m Update equipe.html
+[33m959ad30[m Update equipe.html
+[33m75d9b34[m Update equipe.html
+[33m10a13dc[m Merge branch 'master' of https://github.com/RecodeJr/recodejr.github.io
+[33m4980fce[m Update image file for Newton Luiz in membros directory
+[33m9276222[m Update equipe.html
+[33m75eed87[m Update equipe.html
+[33m2ef2ab4[m Replace outdated image files for Python and C++ e-books with new JPEG versions in produtos.html
+[33m4083e1e[m Merge pull request #40 from RecodeJr/produtos.html
+[33m772a102[m produtos.html
+[33md0781e4[m Merge pull request #39 from RecodeJr/produtos.html
+[33m6132330[m produtos.html
+[33m55cb9f8[m Update equipe.html
+[33me3a50e1[m Update equipe.html
+[33m89a7804[m Update equipe.html
+[33m2a5b7cc[m Update equipe.html
+[33m54c7895[m Update equipe.html
+[33mbc8b1b6[m Update equipe.html
+[33m23b3644[m Update equipe.html
+[33m486d148[m Update equipe.html
+[33mea5b25e[m Update equipe.html
+[33m0f9bf34[m Update equipe.html
+[33m4c304a0[m Add files via upload
+[33m9c7a3d5[m Update equipe.html
+[33mb2828d3[m (AK)Alteração2.html
+[33m750b747[m Foto thiago souza
+[33m792f35f[m ajustes
+[33m1cbe469[m Membros adicionados. Novos conselheiros. Atualização de cargos. Foto de Thiago Souza corrigida.
+[33m4740286[m atualizacao-contato
+[33m4b28f9e[m atualizacao-contato
+[33m8dcf5cd[m Update equipe.html
+[33m106714e[m Update equipe.html
+[33m1f36c25[m correção
+[33ma8a247b[m Correção equipe
+[33m5246e1c[m Merge branch 'master' of https://github.com/RecodeJr/recodejr.github.io
+[33md5b3f07[m Atualizando a equipe
+[33me734ff9[m Fotos de parte dos novos membros
+[33m872bbc9[m Corrigindo nome
+[33m530081f[m Adicionando Laercio aos membros honorarios
+[33m9717888[m Corrigindo equipe
+[33m7d72206[m Correções membros 2024-Janeiro
+[33m37bb5c4[m Atualizando membrosEJ após reunião final 2023
+[33m91123c7[m Corrigindo posicionamento.
+[33mf89840d[m Corrigindo diretorias e adicionando novos membros.
+[33m6d01a48[m alteraçao de erros
+[33me630683[m alteração dos membros em ordem alfabetica
+[33m5debdfc[m adicionando os novos membros
+[33mb4e0992[m Alteração nos membros
+[33me84cdc2[m Atualização de Gestão
+[33m0735b0b[m Atualizando cartoes de membros
+[33m4e76fcf[m mudando o link de lanna facebook -> linkedin
+[33m08bb365[m Corrigindo Foto de Delcimário
+[33m72d85ed[m Merge branch 'atualizacao-2020' into master Adicionando atualização 2020
+[33mf98ca93[m Adicionando CNAME
+[33m9379604[m corrigindo erro
+[33me7bd754[m Adicionando github Kessia
+[33m756c508[m Atualização de estrutura do site e pequena Limpeza de código
+[33m0ac6001[m Update index.html
+[33mbbfbee5[m Update index.html
+[33m3ccd967[m Merge pull request #37 from RecodeJr/Adicionando-modal-recodejam
+[33mb928b49[m Adicionando modal inscrição recode jam
+[33mf7145ea[m Merge pull request #36 from RecodeJr/Retirando-modal-inscrição
+[33m418a393[m Adicionando favicon.ico
+[33mb60481c[m Removendo modal de inscrição no Recode Jam.
+[33m2551130[m Alterando edital
+[33m09d3a29[m Merge pull request #35 from RecodeJr/Ajuste-modal
+[33mf7f67d0[m Ajuste cor titulo tag sobrescrevendo configuração
+[33m4417a0c[m Merge pull request #34 from RecodeJr/Ajuste-modal
+[33m4d37765[m Alteração titulo
+[33m3d57846[m Ajuste cor de título
+[33m7f17b79[m Merge pull request #33 from RecodeJr/Adicionando-modal-recodeJam
+[33mcf102ea[m Modificação para inscrição do Recodejam
+[33mfe60244[m add josé na tela de equipe
+[33mee7c845[m Merge pull request #32 from RecodeJr/Remoção-modal-inscrição
+[33mdb669cd[m Remoção do modal de inscrição
+[33mc134f7d[m Merge pull request #31 from josiassas/master
+[33m76fd483[m Update contatos/membros
+[33m8b92f9d[m reordenando scripts
+[33m616e458[m adicionando target="_blank" nos links do modal
+[33mcd3e7ec[m Merge remote-tracking branch 'origin/master'
+[33mc8814ad[m adicionando script google analytics ao index
+[33m7e7815c[m Alteração Modal
+[33mb3636c0[m Alteração do Modal
+[33m5981fb7[m corrigindo texto do modal
+[33m10138e1[m atualizando edital
+[33m0413d5b[m Merge branch 'atualização2020'
+[33m5e825aa[m link edital
+[33m6f3ef84[m link formulario
+[33m4b0caa2[m Merge branch 'master' of https://github.com/RecodeJr/recodejr.github.io into atualização2020
+[33m69dfac2[m modal prosel
+[33md9f81c5[m atualizando cargos
+[33m548f22b[m Merge branch 'atualização2020'
+[33m975e9dc[m atualizando membros e fotos
+[33m3eb7ca7[m corrigindo links clickaveis
+[33m979a4ec[m Merge branch 'atualização2020'
+[33m440d6c1[m atualizando posições dos membros na aba "conheça a equipe"
+[33m2b7e567[m foto samuel
+[33md9c71df[m foto samuel
+[33m3ba089c[m Merge pull request #30 from RecodeJr/atualização2020
+[33mbea8b83[m Merge tag 'HEAD' into atualização2020
+[33m7c13af7[m Merge branch 'HEAD' into atualização2020
+[33mba0a2ab[m diretoria: alterando fotos,nomes e git na seção
+[33mfbc18a4[m atualizando algumas fotos
+[33m6f22405[m Deixando carousel responsive
+[33mc094f2a[m Link professor
+[33m2de9af8[m up robots.txt
+[33mefc29b7[m del footer-logo.jpg
+[33mab612b0[m del blog.html
+[33m4899721[m Remoção do row diretor
+[33m122b185[m descrição do professor
+[33m9fbc40c[m Remoção pagina campeonato
+[33m037f250[m Update membros e ajustes
+[33m2584291[m Alteraçao de cargos
+[33m7461f5a[m Correção ortografica
+[33mef44ec2[m Correção ortografica
+[33m10b7374[m Merge pull request #29 from RecodeJr/adicionarMembros
+[33m4230ad5[m Adicionando outros membros
+[33m1ac5f5f[m Update Parcial
+[33m7944359[m Diminuindo imagens de parceria!
+[33md76908b[m Adicionando pagina equipe e melhorando a tela parceiros
+[33m49cccfa[m Create CNAME
+[33m17f0a26[m Git Pages
+[33m96578e4[m Correção formulario
+[33m6f470d8[m Atualização do formulario
+[33m6e5d43e[m Update imagem inicial
+[33m7befa5c[m Correção da descrição
+[33m9e98ccb[m Segurança
+[33me08c7ac[m Botão do instagram
+[33m2a05822[m Posição das imagens
+[33m55f99a8[m Imagem menor
+[33m2cda343[m Imagem small
+[33mc830d75[m Atualização
+[33m0862c05[m Falhas na interface
+[33m221a562[m Serviços
+[33mf9fd144[m Revert "Atualização dos textos de serviços de desktop e automação"
+[33m317ded9[m Revert "Site Recode"
+[33m51f1886[m Revert "atualização"
+[33m2e6f51b[m atualização
+[33m8e9ec49[m Atualização dos textos de serviços de desktop e automação
+[33mac32201[m Atualização dos textos de serviços
+[33m753ee79[m Site Recode
+[33m5289d2e[m Revert
+[33m44aa8f5[m Revert "Atualização"
+[33me32225e[m Revert "Atualização"
+[33m366c97c[m Atualização
+[33m08b983c[m Atualização
+[33ma70983b[m Atualização do portifólio - site recode
+[33m0f170f5[m atualização da página portifolio
+[33m45e8b00[m atualização fotos index
+[33m7bd0d73[m fix seja recode
+[33m8985c11[m fix parceiros
+[33ma48ca81[m fix foto membro
+[33mc6885e9[m Delete sejarecode.html
+[33m4587a5c[m Add files via upload
+[33md3d94b7[m Add files via upload
+[33m81b4a65[m Add files via upload
+[33m9ec6e44[m Add files via upload
+[33ma549f8e[m Add files via upload
+[33m30d1fc7[m Add files via upload
+[33m86e9d58[m update
+[33mb46ce89[m update index
+[33mf20e7e6[m update index
+[33me2ff438[m icon
+[33mc69059d[m Parceiros
+[33m514444b[m Contato
+[33mba5ae3f[m Correção de bugs
+[33mf1a662b[m Alteração Cabeçalho paginas
+[33mde1b8d9[m Bug fixes
+[33m8135753[m Add Portifolio
+[33me2b70ef[m portifolio
+[33mf63d6eb[m update membros/seja recode jr
+[33m0f394d1[m membros
+[33mae3cc23[m Update index.html
+[33mf9e1998[m Update index.html
+[33mc083548[m Update CNAME
+[33mca2221a[m Create CNAME
+[33ma750a86[m Delete CNAME
+[33md7c87f7[m Update CNAME
+[33m745baaa[m Create CNAME
+[33m932c280[m Merge pull request #28 from RecodeJr/gh-pages
+[33m9395cae[m Merge pull request #27 from RecodeJr/master
+[33m580faa9[m Merge pull request #26 from RecodeJr/joshuapassos-patch-1
+[33ma5e67a4[m Delete CNAME
+[33m8dce50d[m Delete CNAME
+[33mcce30b1[m Merge pull request #24 from joshuapassos/master
+[33m2b370e3[m video
+[33ma0d0f43[m organizando repo
+[33m37c6ca9[m Merge pull request #23 from joshuapassos/master
+[33m2349312[m ramon link
+[33m7371ff8[m atualização
+[33m8bf6bfa[m Merge pull request #22 from joshuapassos/master
+[33m9dd5701[m correções
+[33mb00d34e[m atualização membros
+[33mc7f0f4f[m Merge pull request #20 from joshuapassos/master
+[33m5e7778e[m atualização page equipe
+[33md652063[m Merge pull request #19 from joshuapassos/master
+[33m7f751de[m menu att + equipe page
+[33mf6dcd4a[m Merge pull request #18 from joshuapassos/master
+[33ma1d0157[m Merge pull request #17 from joshuapassos/gh-pages
+[33m34932fd[m Merge pull request #15 from joshuapassos/feature/parceiros
+[33m8160e36[m wp
+[33mf474eae[m Merge pull request #14 from joshuapassos/feature/parceiros
+[33m9e32b65[m up parc
+[33m26fe85b[m correção de bugs
+[33mc72b35c[m correcao imgs
+[33m03fc89c[m Arrumando o botão
+[33m64ab552[m Botão Participar Battlefy
+[33m0101d1e[m update last sections
+[33m17a207b[m add fa-youtube
+[33m1fd6ecb[m add parceiros section
+[33m654d692[m artes parceiros
+[33ma4b2e0d[m Merge pull request #12 from joshuapassos/master
+[33m677e0ac[m Merged feature/LinkCampPagPrincipal into master
+[33m45a7ea0[m add func Camp na pagina principal
+[33m413676a[m Merge pull request #11 from joshuapassos/master
+[33m43841c6[m up func_a
+[33maca023f[m Merge pull request #10 from joshuapassos/master
+[33m9b01d18[m up new func
+[33m5f5cd4f[m Merge pull request #9 from joshuapassos/master
+[33md868dae[m up
+[33m34a28f1[m Merge pull request #8 from joshuapassos/master
+[33m08eb780[m up
+[33m0cf8b4a[m Merge pull request #7 from joshuapassos/gh-pages
+[33m93b4a62[m Merge pull request #6 from joshuapassos/master
+[33m92bc4c4[m Merged gh-pages into master
+[33m1e8f462[m Battlefy
+[33m23869d6[m Inscrição BAttlefy
+[33m88f4fa7[m Minor Fixes 2
+[33m19c3ff3[m Minnor Fixes
+[33ma5d744e[m Update Modo de Jogo
+[33mfcbec4a[m up readme
+[33m9d21fad[m Merge pull request #5 from joshuapassos/master
+[33m19a7181[m Update regras.html
+[33m74cd392[m Update regras.html
+[33m0256259[m correção e melhorias nos textos
+[33m369b80b[m att
+[33m8161baf[m add pages
+[33mc7dc7bd[m campeonato
+[33m8c5c767[m Update index.html
+[33mc100ba0[m blog template
+[33m6d2a56a[m Update style.css
+[33m3956826[m Update responsive.css
+[33m90a3274[m bug fix
+[33m1f30d14[m fix bug margin right
+[33m9e503f1[m test
+[33maee2831[m tentativa de corrigir erro da barra branca
+[33m936e957[m corrigindo_erro
+[33mede10b7[m corrigindo erro
+[33m0c7fbe1[m att
+[33m0247676[m att logos
+[33maa5ce92[m atualizações/criações de páginas
+[33m2d387da[m Update index.html
+[33mcecfaea[m Update style.css
+[33mff4e98a[m Update style.css
+[33mbadea61[m Update style.css
+[33m4089dd1[m Update index.html
+[33me27b7e2[m up
+[33ma37b0f1[m fix end
+[33md7e59bd[m Update regras.html
+[33m0874025[m Update regras.html
+[33mc2bfc29[m correção e melhorias nos textos
+[33ma88c1b2[m att
+[33m973e477[m add pages
+[33m150d171[m Merged branch gh-pages into gh-pages
+[33m63c317d[m campeonato
+[33m31c281c[m Update index.html
+[33m00f3f4f[m blog template
+[33m01edfe1[m Update style.css
+[33md0c12aa[m Update responsive.css
+[33m69f258e[m bug fix
+[33md702d5a[m fix bug margin right
+[33m759110b[m test
+[33m17ba477[m tentativa de corrigir erro da barra branca
+[33m28069bf[m corrigindo_erro
+[33m6c42810[m corrigindo erro
+[33m0856666[m att
+[33mf8bf7bd[m att logos
+[33m11eda49[m atualizações/criações de páginas
+[33m57aa9d7[m Update index.html
+[33m2aba0bd[m Update style.css
+[33m994d88e[m Update style.css
+[33m48cb232[m Update style.css
+[33ma153bcc[m Update index.html
+[33mb820e18[m up
+[33m0e7d58d[m fix end
+[33m18bcd29[m update github links membros
+[33m8015cbe[m uptade contatos
+[33m9daea84[m uptade servicos
+[33m9c19122[m Merge pull request #1 from joshuapassos/gh-pages
+[33m775a77c[m fix form
+[33m7e160f6[m fix form
+[33m7429849[m fix buttom
+[33m085297b[m up website
+[33m8811760[m Merged branch master into gh-pages
+[33m07bcaee[m Update index.html
+[33m27b0b7c[m Merged branch master into gh-pages
+[33mdcdb653[m Update index.html
+[33med77d5a[m up
+[33m7b38a49[m up
+[33mbe06e5d[m Merged branch master into master
+[33m6440210[m Merged branch gh-pages into gh-pages
+[33me2198ce[m Merged branch gh-pages into gh-pages
+[33m8154aa4[m up
+[33mc17b532[m up
+[33m42227ea[m Initial commit
